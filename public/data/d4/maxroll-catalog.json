@@ -1,0 +1,2365 @@
+{
+  "version": "3.2.1.73552",
+  "source": "Maxroll d4-tools game dump, cached locally. No hotlinks.",
+  "counts": {
+    "uniques": 332,
+    "slots": 28,
+    "files": 317
+  },
+  "slots": {
+    "amulet": "/images/d4/maxroll/slots/amulet.png",
+    "axe": "/images/d4/maxroll/slots/axe.png",
+    "axe2h": "/images/d4/maxroll/slots/axe2h.png",
+    "boots": "/images/d4/maxroll/slots/boots.png",
+    "bow": "/images/d4/maxroll/slots/bow.png",
+    "charm": "/images/d4/maxroll/slots/charm.png",
+    "chest": "/images/d4/maxroll/slots/chest.png",
+    "crossbow": "/images/d4/maxroll/slots/crossbow.png",
+    "dagger": "/images/d4/maxroll/slots/dagger.png",
+    "focus": "/images/d4/maxroll/slots/focus.png",
+    "glaive": "/images/d4/maxroll/slots/glaive.png",
+    "gloves": "/images/d4/maxroll/slots/gloves.png",
+    "helm": "/images/d4/maxroll/slots/helm.png",
+    "mace": "/images/d4/maxroll/slots/mace.png",
+    "mace2h": "/images/d4/maxroll/slots/mace2h.png",
+    "pants": "/images/d4/maxroll/slots/pants.png",
+    "polearm": "/images/d4/maxroll/slots/polearm.png",
+    "quarterstaff": "/images/d4/maxroll/slots/quarterstaff.png",
+    "ring": "/images/d4/maxroll/slots/ring.png",
+    "scythe": "/images/d4/maxroll/slots/scythe.png",
+    "scythe2h": "/images/d4/maxroll/slots/scythe2h.png",
+    "seal": "/images/d4/maxroll/slots/seal.png",
+    "shield": "/images/d4/maxroll/slots/shield.png",
+    "staff": "/images/d4/maxroll/slots/staff.png",
+    "sword": "/images/d4/maxroll/slots/sword.png",
+    "sword2h": "/images/d4/maxroll/slots/sword2h.png",
+    "totem": "/images/d4/maxroll/slots/totem.png",
+    "wand": "/images/d4/maxroll/slots/wand.png"
+  },
+  "uniques": [
+    {
+      "name": "Ahavarion, Spear of Lycander",
+      "slot": "staff",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/ahavarion-spear-of-lycander.png",
+      "flavor": "\"The angel Lycander left us a portion of her power in this spear. It is all the proof I need that she watches over us still.\"\n- Oracle Argoysni"
+    },
+    {
+      "name": "Andariel's Visage",
+      "slot": "helm",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/andariels-visage.png",
+      "flavor": "The horrific whispers of the Maiden of Anguish flicker through your mind, pushing you ever closer to madness..."
+    },
+    {
+      "name": "Doombringer",
+      "slot": "sword",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/doombringer.png",
+      "flavor": "Whenever this ancient sword has reappeared throughout history, it portends a time of great strife, as well as a devastating loss of life."
+    },
+    {
+      "name": "El'Druin, Sword of Justice",
+      "slot": "sword",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/eldruin-sword-of-justice.png",
+      "flavor": "You hold Justice itself in your hands."
+    },
+    {
+      "name": "Harlequin Crest",
+      "slot": "helm",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/harlequin-crest.png",
+      "flavor": "\"This headdress was once worn by an assassin disguised as a court mage. Her treachery was unveiled, but not before she used its magic to curse the king's entire lineage.\"\n- The Fall of House Aston"
+    },
+    {
+      "name": "Heir of Perdition",
+      "slot": "helm",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/heir-of-perdition.png",
+      "flavor": "Beware false prophets donned as sheep yet bearing the stench of wolves. Thou shalt know them by their fruits. For a tree of good cannot produce evil, nor thorns yield a harvest sweet and fair."
+    },
+    {
+      "name": "Hellfire Torch",
+      "slot": "charm",
+      "mythic": true,
+      "icon": "/images/d4/slots/charm.png",
+      "flavor": ""
+    },
+    {
+      "name": "Melted Heart of Selig",
+      "slot": "amulet",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/melted-heart-of-selig.png",
+      "flavor": "\"Do not allow your passions to become obsessions. Fuel the fire that burns within you, but it is madness to allow yourself to become ash to please an uncaring universe.\"\n- Last words of Master Selig"
+    },
+    {
+      "name": "Mythic Unique Horadric Seal",
+      "slot": "seal",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/mythic-unique-horadric-seal.png",
+      "flavor": ""
+    },
+    {
+      "name": "Nesekem, the Herald",
+      "slot": "glaive",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/nesekem-the-herald.png",
+      "flavor": "In the days when Ajaw Y'ishich ruled Nahantu, the phoenix constellation's crown fell in burning glory. From it was forged a blade that withered valor, heralding an age of despair."
+    },
+    {
+      "name": "Ring of Starless Skies",
+      "slot": "ring",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/ring-of-starless-skies.png",
+      "flavor": "\"Yours is the power to pluck the stars from the heavens with the ease of a child gathering fruit from the bough.\"\n- Unknown"
+    },
+    {
+      "name": "Seal of the Diamond Mind",
+      "slot": "seal",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/seal-of-the-diamond-mind.png",
+      "flavor": "\"Every facet, precise. Each turn of the stone, a symphony of refracted light. How miraculous the properties? How thrilling the possibilities?\" -Zoltun Kulle"
+    },
+    {
+      "name": "Seal of the Golden Epiphany",
+      "slot": "seal",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/seal-of-the-golden-epiphany.png",
+      "flavor": "\"I know what I must do. Phoba, Fer, Mlor, aligned upon a single, terrible course. Yet despite myself, I find the certainty not only comforting but beautiful in its simplicity.\" -Tal Rasha"
+    },
+    {
+      "name": "Seal of the Severed Finger",
+      "slot": "seal",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/seal-of-the-severed-finger.png",
+      "flavor": "\"It is a small sacrifice. But who would not regard their own hand and prefer it remain whole? Even against the promise of such power?\" -Elias of Aranoch"
+    },
+    {
+      "name": "Shattered Vow",
+      "slot": "polearm",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/shattered-vow.png",
+      "flavor": "Malthael's last and only gift to mankind - a vow that our suffering shall end."
+    },
+    {
+      "name": "Shroud of False Death",
+      "slot": "chest",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/shroud-of-false-death.png",
+      "flavor": "\"Auriel alone saw past Lucion's guise. With Al'maiesh aloft, she smote the vile prince. Hatred's seed feigned death and waited, loath to enter the Abyss again.\" - The Great Conflict, Tome I"
+    },
+    {
+      "name": "The Grandfather",
+      "slot": "sword2h",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/the-grandfather.png",
+      "flavor": "An unbroken lineage of unwavering strength."
+    },
+    {
+      "name": "Tyrael's Might",
+      "slot": "chest",
+      "mythic": true,
+      "icon": "/images/d4/maxroll/uniques/tyraels-might.png",
+      "flavor": "\"Thus Tyrael, a perfect aspect of Justice, came to be. None were more vehement against the forces of hell. All demonic entities learned to shudder at Justice's might.\" \n-The Books of Jarl, Volume I"
+    },
+    {
+      "name": "(PH) Template Unique",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ph-template-unique.png",
+      "flavor": "(PH) Flavor Text"
+    },
+    {
+      "name": "100,000 Steps",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/100-000-steps.png",
+      "flavor": "\"While many Barbarians remained in the Dreadlands, small groups from the Oxen, Crane, and Bear tribes instead chose to search the land for a new home.\" -A History of the Children of Bul-Kathos"
+    },
+    {
+      "name": "Accord of the Wilds",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/accord-of-the-wilds.png",
+      "flavor": "You do not see your reflection on the ring's polished surface. Instead, you see other forms: creatures of fur and feather, of fang and claw."
+    },
+    {
+      "name": "Ae'grom's Schism",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/aegroms-schism.png",
+      "flavor": "\"Cut a demon nice and wide. Something rises from inside. Eye and fang, bone and sinew. What was one has become two.\" -Ravings of a mad Vizjerei"
+    },
+    {
+      "name": "Airidah's Inexorable Will",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/airidahs-inexorable-will.png",
+      "flavor": "\"When I was born, I breathed in the wind and the storm and they gave me life. When I die, I will breath out, and return that gift to the skies.\"\n- Journal excerpt"
+    },
+    {
+      "name": "Anathema of the Primes",
+      "slot": "sword2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/anathema-of-the-primes.png",
+      "flavor": "Hatred begins the first cut. Terror holds the wound. Destruction comes at last, patient and certain, to devour what remains."
+    },
+    {
+      "name": "Ancients' Oath",
+      "slot": "axe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ancients-oath.png",
+      "flavor": "\"Weapons wielded by the fiercest warriors often catch the eye of the Ancient spirits. If the wielder is worthy, the spirits may bless the steel with their strength.\" -Gerti, Oxen Tribe Forgemaster"
+    },
+    {
+      "name": "Annihilus",
+      "slot": "seal",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/annihilus.png",
+      "flavor": ""
+    },
+    {
+      "name": "Arcadia",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/arcadia.png",
+      "flavor": "No wasteland may weary the bearer of Arcadia. Beneath their path, the soil remembers its first spring, and blades of war soften into petals."
+    },
+    {
+      "name": "Argent Veil",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/argent-veil.png",
+      "flavor": "\"And the moon looked upon the pilgrims and wept a path of light. Through her tears they walked unseen, and night remembered them no more.\" - Orison XVII: Creed of the Dove"
+    },
+    {
+      "name": "Arioc's Needle",
+      "slot": "polearm",
+      "mythic": false,
+      "icon": "/images/d4/slots/polearm.png",
+      "flavor": "For decades, the spearhead lay encased in resin, warded with runes, and sealed in a block of granite. So feared was the venom infused in its tip, taken from the fang of a great spider, long extinct."
+    },
+    {
+      "name": "Arreat's Bearing",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/arreats-bearing.png",
+      "flavor": "\"Rise clansmen and reclaim our trampled honor! Ancients' blood runs through us all! We are storms: earth breaking, maelstrom wielding. The fire of the gods burn still! They are with us!\" -Ealda"
+    },
+    {
+      "name": "Asheara's Khanjar",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ashearas-khanjar.png",
+      "flavor": "When Caldeum's gates closed, Asheara led her Iron Wolves out of the city knowing full well they would never return. Instead they roamed Kehjistan pledging their blades to any who were in need."
+    },
+    {
+      "name": "Assassin's Stride",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/assassins-stride.png",
+      "flavor": "The Viz-Jaq'taar descended on the mages indiscriminately and silently as a plague. The wise took flight, whilst the foolish fortified their dwellings as if walls or wards protected from shadow."
+    },
+    {
+      "name": "Autumnal Crown",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/autumnal-crown.png",
+      "flavor": "\"Lo, \u00c9irin has departed, she wanders with us no longer. May her peace be everlasting under the branches of Gl\u00f3r-an-Fh\u00e1idha.\" -Inscription at T\u00far D\u00falra"
+    },
+    {
+      "name": "Axial Conduit",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/axial-conduit.png",
+      "flavor": "\"Do not confuse your manipulation of lightning as control. The azure flame is its own master and needs no hand to wield it. You are merely a conduit for its chaos.\" -Ascribed to the mage Woh"
+    },
+    {
+      "name": "Azurewrath",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/azurewrath.png",
+      "flavor": "The ancient runeblade of the angel Izual, Azurewrath was miraculously spared the corruption that consumed its master."
+    },
+    {
+      "name": "Balazan's Maxtlatl",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/balazans-maxtlatl.png",
+      "flavor": "\"Know the dangers of fang and root. One hides in the leaf, the berry, the still water. The other waits in the bite, the stinger, the wound.\" - Teachings of Balazan, Verse III"
+    },
+    {
+      "name": "Band of First Breath",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/band-of-first-breath.png",
+      "flavor": "A gentle whisper glides upon the winds. The words elude the grasp of mortal ken. They weave through the soul like a melody forgotten, and from this arises a name: Adarja, the\u00a0First-Breather."
+    },
+    {
+      "name": "Bands of Ichorous Rose",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bands-of-ichorous-rose.png",
+      "flavor": "From the stump of the Blood Rose oozes a foul and black ichor\u2014bane to flesh and blood. Blade and hide treated in the toxics are worth the fortunes of kings."
+    },
+    {
+      "name": "Bane of\u00a0Ahjad-Den",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bane-of-ahjad-den.png",
+      "flavor": "Before Baal's hosts blighted Daken-Shar, the outnumbered northmen clad themselves in barbed mail so that even in death, the demons still bled."
+    },
+    {
+      "name": "Banished Lord's Talisman",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/banished-lords-talisman.png",
+      "flavor": "\"His name has been lost to history, but to have been exiled from a land as cursed as Hawezar, his deeds must have been truly depraved.\"\n- Scholar's Notes"
+    },
+    {
+      "name": "Bastion of Sir Matthias",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bastion-of-sir-matthias.png",
+      "flavor": "...And when the enemy pressed too near, his bulwark became a hammer."
+    },
+    {
+      "name": "Battle Trance",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/battle-trance.png",
+      "flavor": "\"The change that overtook my brother in battle was terrifying. His eyes turned hard like diamonds, and the way he moved... it was like he was dancing to music only he could hear.\"\n- Captain Dervin"
+    },
+    {
+      "name": "Beastfall Boots",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/beastfall-boots.png",
+      "flavor": "\"Genai grew proud and fond of boasting of her hunting prowess. She claimed she was fast enough to catch even the spirit Leraye, who cursed her for such an insult.\"\n- Fable of Genai's Twenty Trials"
+    },
+    {
+      "name": "Bell of the Bovine",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/slots/amulet.png",
+      "flavor": "\"The fever racks my body. It dances... rhythmless, endless! I fear there is but one remedy. MORE! I must hear more...\" -Lester the Farmer"
+    },
+    {
+      "name": "Bindings of Attrition",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bindings-of-attrition.png",
+      "flavor": "\"What is more perfect than blood? A single drop can consecrate, empower, or curse. Know this: The most potent form is not blood stolen from others, but given from one's self.\" -Elias"
+    },
+    {
+      "name": "Black River",
+      "slot": "scythe",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/black-river.png",
+      "flavor": "\"The scrolls describe a river of tar that separated the living from the land of the dead. Any unfortunate soul who tried to cross would be dragged down into oblivion.\" -Notes of Scholar Kamien"
+    },
+    {
+      "name": "Blood Artisan's Cuirass",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/blood-artisans-cuirass.png",
+      "flavor": "\"The infamous Necromancer Gaza-Thul's mastery over blood magic was indisputable. Many suspect that upon his death, his skin was used to fashion this eldritch armor.\" -Barrett's Book of Implements"
+    },
+    {
+      "name": "Blood Moon Breeches",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/blood-moon-breeches.png",
+      "flavor": "A naturally occurring curiosity, the blood moon persists as a sign of woe for the most superstitious Zakarum faithful. Children born under it are often considered cursed and cast out, lest it spread."
+    },
+    {
+      "name": "Blood Wake",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/blood-wake.png",
+      "flavor": "\"These Priests of Rathma are quite peculiar. Is it possible to dabble in the forbidden yet uphold Balance? Too often, the power of such magic leads to corruption.\" \u2013The Writings of Abd al-Hazir"
+    },
+    {
+      "name": "Blood-Mad Idol",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/blood-mad-idol.png",
+      "flavor": "\"The relic was fashioned for the broken-hearted and the battle-mad, for those whose rage has nowhere left to dwell.\" - Notes from Sister Octavia on the Burnt Knights"
+    },
+    {
+      "name": "Bloodless Scream",
+      "slot": "scythe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bloodless-scream.png",
+      "flavor": "\"My companion swung her odd weapon in a wide arc, and our pursuer stopped short. The look of horror on his face as his body fell to pieces will haunt me forever.\" -The Ebon Pages, Canto II, Verse XI"
+    },
+    {
+      "name": "Blue Rose",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/blue-rose.png",
+      "flavor": "\"Her lover's spirit faded, and in her sorrow she wept frozen tears. Where they fell, roses of the purest ice would blossom each winter.\"\n- Greenslade's Tales, Chapter 7: \"The Myth of Irina Coldheart\""
+    },
+    {
+      "name": "Boost Dagger",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/boost-dagger.png",
+      "flavor": ""
+    },
+    {
+      "name": "Boost Helm",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/boost-helm.png",
+      "flavor": ""
+    },
+    {
+      "name": "Boost Pants",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/boost-pants.png",
+      "flavor": ""
+    },
+    {
+      "name": "Boost Scythe",
+      "slot": "scythe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/boost-scythe.png",
+      "flavor": ""
+    },
+    {
+      "name": "Boost Staff",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/boost-staff.png",
+      "flavor": ""
+    },
+    {
+      "name": "Bridle of Tor'Baalos",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bridle-of-torbaalos.png",
+      "flavor": "\"Destruction can be become an addiction, it is said. The first taste of it leaves you wanting more. Something within us craves ruin, yearns for annihilation.\" -Black Book of Lam Esen"
+    },
+    {
+      "name": "Bucrani's Grip",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bucranis-grip.png",
+      "flavor": "\"Kin of Bo'a, beloved of Bucrani,\nWhose path led into the wine-dark pasture.\nThe victor's sword swings for this alone,\nTo lop off all thought and memory\u2013a final mercy.\"\nLow of Bo'a, Verse 50-54"
+    },
+    {
+      "name": "Bucrani's Resolve",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bucranis-resolve.png",
+      "flavor": "\"...In those days, the children of Bucrani were known to many. Great was their sway, and mighty was their squall! How could any realm hold such strong souls?\" -Oxridge, Common Histories, fragment II"
+    },
+    {
+      "name": "Bucrani's Tread",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bucranis-tread.png",
+      "flavor": "\"Changing, consuming, becoming: this is the way of all life.\nI give myself to you, my children, so that you may live.\"\nLow of Bo'a, Verse 112-113"
+    },
+    {
+      "name": "Bucrani's Will",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/bucranis-will.png",
+      "flavor": "The leather feels warm to the touch, as through life clings to it. A divine purpose still trembles in each fold."
+    },
+    {
+      "name": "Cage of Madness",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cage-of-madness.png",
+      "flavor": "\"Sin begets sins as men beget men. Terror begets Hate and Hate begets Destruction. Destruction begets Terror as Terror begets Hate...\" -Inscription carved inside the helm"
+    },
+    {
+      "name": "Cassia's Grace",
+      "slot": "bow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cassias-grace.png",
+      "flavor": "\"Tell us, Oracle Queen, of our great Amazon Sister, who wandered far from her home into the Heart of Terror.\" -Ode to the Warmatron"
+    },
+    {
+      "name": "Cathedral's Song",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cathedrals-song.png",
+      "flavor": "Sing. And so too will they sing. Rejoice. And so too will they rejoice. Fight. And so too will they fight."
+    },
+    {
+      "name": "Chainscourged Mail",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/chainscourged-mail.png",
+      "flavor": "To chain the kin of Bul-Kathos is to gift them a weapon."
+    },
+    {
+      "name": "Cluckeye",
+      "slot": "bow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cluckeye.png",
+      "flavor": "This bow has been tainted by some strange magic indeed."
+    },
+    {
+      "name": "Cluckonomicon",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cluckonomicon.png",
+      "flavor": "One touch and you understand... behind their vacant gaze is a fiendish hunger, patient and unreasoning."
+    },
+    {
+      "name": "Condemnation",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/condemnation.png",
+      "flavor": "\"I've never seen such ruthless butchery. He deserves to be shipped off to die in the swamps with the rest of the godless murderers.\"\n- Witness to the murder of Sergeant Walcot"
+    },
+    {
+      "name": "Coop de Gr\u00e2ce",
+      "slot": "polearm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/coop-de-gr-ce.png",
+      "flavor": "Mercy ends where the flock begins."
+    },
+    {
+      "name": "Cowl of Malefic Torment",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cowl-of-malefic-torment.png",
+      "flavor": "\"The doomed do not fall at once. They linger, falter in purpose, and then unravel. Breath shortens. Will erodes. Fortune abandons them. When death finally comes, 'tis merely overdue.\" -Warlord Bartuc"
+    },
+    {
+      "name": "Cowl of the Nameless",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cowl-of-the-nameless.png",
+      "flavor": "\"He is banished from the Guild, his name stricken from the Book. His punishment is to never have been.\" \n- Excerpt from a burned parchment"
+    },
+    {
+      "name": "Craze of the Dead God",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/craze-of-the-dead-god.png",
+      "flavor": "T'an seized a spear and drove it thrice into his mad brother Tan. Alas, the craftier of the twin gods wove one last cunning snare. In place of blood, the wound wept venom and consumed all in its wake."
+    },
+    {
+      "name": "Crown of Lucion",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/crown-of-lucion.png",
+      "flavor": "The prince of Hatred, fair as maggots over carrion. He claims no throne, crafts no realms, reigning over only a blackened, bitter heart. Some legends name him banished, while others dread his return."
+    },
+    {
+      "name": "Cruor's Embrace",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/cruors-embrace.png",
+      "flavor": "In the blood dancer's grasp, a victim lies,\nA vessel dried 'neath darkened skies.\nTheir life extinguished, veins burst and drained,\nIn Cruor's embrace, forever enchained."
+    },
+    {
+      "name": "Dark Howl",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dark-howl.png",
+      "flavor": "\"They who live by fang and claw forget the feeling of human feet on soil. Of cold air on bare skin. Man and beast...thoughts, desires...merge together like blood spilled in a stream.\" -Nafain"
+    },
+    {
+      "name": "Dark Stalker's Medallion",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dark-stalkers-medallion.png",
+      "flavor": "\"Tried dying once. Didn't care for it.\" -Renit the Dark Stalker"
+    },
+    {
+      "name": "Dawnfire",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dawnfire.png",
+      "flavor": "\"Kindle your inner flame. With it, we are the dawn that breaks the night.\" - Paladin\u00a0Justelle"
+    },
+    {
+      "name": "Death's Pavane",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/deaths-pavane.png",
+      "flavor": "\"The assassin moved as though in a dance - left, pivot, cut. The guests did not realize they had been split until their screams gurgled through the slits in their necks.\" - An Account at the Red Feast"
+    },
+    {
+      "name": "Deathgrip",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/deathgrip.png",
+      "flavor": "\"There is something akin to desire that I have sensed in the dead. A longing to serve, to be of purpose in their new state of being. Do not deny them that purpose.\" -Books of Kalan"
+    },
+    {
+      "name": "Deathless Visage",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/deathless-visage.png",
+      "flavor": "\"Rathma is endless. He was the first Ancient, and will remain at the end. He is the master of the Great Cycle of Being. When Death comes for him, why should he fear it?\" -Vauntus, Acolyte of Rathma"
+    },
+    {
+      "name": "Deathmask of Nirmitruq",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/deathmask-of-nirmitruq.png",
+      "flavor": "Beware, for the serpent's spirit lingers. Those who don the Nirmitruq's visage may find their hearts entwined with the viper's wrath."
+    },
+    {
+      "name": "Deathspeaker's Pendant",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/deathspeakers-pendant.png",
+      "flavor": "Once a sanctum for Rathma's studies, the Temple of the Deathspeaker became a proving grounds for potential leaders of his priesthood. Its halls are filled with the corpses of those who failed."
+    },
+    {
+      "name": "Desperate March",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/desperate-march.png",
+      "flavor": "\"My feet do not ache\u2014there is no greater pain than stopping.\nInto the Abyss I go. I will find her. I will bring her home. \nHell cannot keep me from her, but it is welcome to try.\"\n- Unknown"
+    },
+    {
+      "name": "Dirge of Airidah",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dirge-of-airidah.png",
+      "flavor": "\"I saw her climb to the peak of the mountains. She played a song on her talharpa, so sad it made the sky darken and rumble with thunder.\" -A History of Scosglen, Chapter IV"
+    },
+    {
+      "name": "Dirge of Odium",
+      "slot": "axe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dirge-of-odium.png",
+      "flavor": "\"I am the voice of vengeance unsated. Brandish me and my enmity shall walk with thine. Thy grief is thy tithe. My dirge, the dread reward.\""
+    },
+    {
+      "name": "Dolmen Stone",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/dolmen-stone.png",
+      "flavor": "As the hateful mob beat on his door, he gripped the pulsing shard tightly and screamed for calm. When he opened his eyes, all that greeted him was silence and the blood-smeared ruins of his cottage."
+    },
+    {
+      "name": "Drognan's Anguish",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/drognans-anguish.png",
+      "flavor": "Made from the finger of a silver-haired mage"
+    },
+    {
+      "name": "Eaglehorn",
+      "slot": "bow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/eaglehorn.png",
+      "flavor": "\"Scholars have been unable to decipher the runes carved into this bow, however all agree they are related to its uncanny ability to bend arrows towards their targets.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Earthbreaker",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/earthbreaker.png",
+      "flavor": "When Arreat was sundered, the world quaked. The Druid Aglainn journeyed far to chronicle the aftermath. Grief-stricken by the great mountain king's fall, he rent the earth anew."
+    },
+    {
+      "name": "Ebonpiercer",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ebonpiercer.png",
+      "flavor": "This talisman was the life's work of Deathspeaker Jurdann. Following his premature demise, Jurdann's successor wore the amulet in tribute as they trialed against the Temple of the Deathspeaker."
+    },
+    {
+      "name": "Echo of Kwatli",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/echo-of-kwatli.png",
+      "flavor": "\"Strike once to expose weakness, strike again to exploit it.\" -Teachings of Ysevete, the First Spiritborn"
+    },
+    {
+      "name": "Eggcecutioner",
+      "slot": "scythe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/eggcecutioner.png",
+      "flavor": "Each soul it severs returns as an omen of renewal, cradled in bone-white curve."
+    },
+    {
+      "name": "Eggis",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/eggis.png",
+      "flavor": "The Eggis was not forged, but laid by a beast most fowl."
+    },
+    {
+      "name": "Elegy",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/elegy.png",
+      "flavor": "Weave a song from the damned. Pluck their sorrows like harp strings, for there is fuel in the tears of the profane."
+    },
+    {
+      "name": "Emberfury",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/emberfury.png",
+      "flavor": "The greatest power is often the shortest lived."
+    },
+    {
+      "name": "Emblem of Staalbreak",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/emblem-of-staalbreak.png",
+      "flavor": "An old mark of office from the town of Staalbreak, in the Dreadlands. The rage of its last owner still emanates from within."
+    },
+    {
+      "name": "Endurant Faith",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/endurant-faith.png",
+      "flavor": "Despite the Light's blessings, countless Knights Penitent were hewn apart by the infernal hordes. Remnants of their steel lie scattered through the Hells \u2013 dwindling lights in the chaos."
+    },
+    {
+      "name": "Esadora's Overflowing Cameo",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/esadoras-overflowing-cameo.png",
+      "flavor": "The only thing more potent than Esadora's magic was her endless hatred of humanity. As she lay dying, the pale amulet around her neck drank in both."
+    },
+    {
+      "name": "Esu's Heirloom",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/esus-heirloom.png",
+      "flavor": "\"While scholars have proven these boots were not created by Esu herself, it is noteworthy that they have been passed down since the formation of the Mage Clans.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Etna's Lost Dagger",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/etnas-lost-dagger.png",
+      "flavor": "\"Prepare thoroughly before approaching any warlock. Fill your elixirs, replenish your arrows. Oil and sheath your blades before you depart.\" -Arts of the Viz-Jaq'taar"
+    },
+    {
+      "name": "Eye of Baal",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/eye-of-baal.png",
+      "flavor": "\"When the moon turns crimson, it is Baal's eye opening. Show him acts of destruction, and he will reward you with power.\"\u00a0-Rites of the Triune"
+    },
+    {
+      "name": "Eyes in the Dark",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/eyes-in-the-dark.png",
+      "flavor": "\"And so, when the sun dipped behind the hills each night, he knew that Ashen Jack would soon be near. Watching, and waiting.\"\n- Greenslade's Tales, Chapter 2: \"Each Long Night\""
+    },
+    {
+      "name": "Fang of the Vipermagi",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fang-of-the-vipermagi.png",
+      "flavor": "The venom from these fangs was known to cause severe blisters and burns - forever. The Zann Esu were known to use them to fashion blades, supplementing their own abilities."
+    },
+    {
+      "name": "Fields of Crimson",
+      "slot": "sword2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fields-of-crimson.png",
+      "flavor": "\"We've been fighting these flesh-eaters for so long, been soaked in so much blood, that after a while it's difficult to tell what side you're truly on.\" -Daelyr, Crane Tribe warrior"
+    },
+    {
+      "name": "Fist of the Iron Rose",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fist-of-the-iron-rose.png",
+      "flavor": "\"She wished only to protect her sister. She journeyed far to Ivgorod. After years of training she returned home, being the only outsider to ever master the six techniques.\" -Legends of the Iron Rose"
+    },
+    {
+      "name": "Fists of Fate",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fists-of-fate.png",
+      "flavor": "\"Will you let fear cheat you, or will you risk everything to find understanding? After all, death is simply the coin with which we purchase life.\"\n- Zurke"
+    },
+    {
+      "name": "Fists of War",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fists-of-war.png",
+      "flavor": ""
+    },
+    {
+      "name": "Flamescar",
+      "slot": "wand",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/flamescar.png",
+      "flavor": "The burn may heal, but the pain is eternal."
+    },
+    {
+      "name": "Flameweaver",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/flameweaver.png",
+      "flavor": "Driven to surpass Esu, the wizard Naridan's reckless enchantments caused an inferno, devastating the ancient town of Cagrim. Only the gauntlets remained - a solemn warning to all who dare tame fire."
+    },
+    {
+      "name": "Fleshrender",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fleshrender.png",
+      "flavor": "\"This weapon is a reminder of the unbridled savagery of our druidic ancestors, the wisdom of which I see more clearly with every day that passes.\"\n- Moreg, Druidic Scholar"
+    },
+    {
+      "name": "Fleshwrit Carapace",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fleshwrit-carapace.png",
+      "flavor": "\"...Our rites are written not with ink, but with blood. Not upon stone, but upon the living flesh...\" -Taphya 13:6"
+    },
+    {
+      "name": "Flickerstep",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/flickerstep.png",
+      "flavor": "\"Considered a failure by their creator, it wasn't until the assassination of an \"untouchable\" Caldeum noble that these boots' true power was understood.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Footfalls of the Waning World",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/footfalls-of-the-waning-world.png",
+      "flavor": "Step onward, and the living realm shall dim behind thee as the Black Road uncoils, eternal and cold. Even death shall fail to follow thee there."
+    },
+    {
+      "name": "Fractured Runestone",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fractured-runestone.png",
+      "flavor": "\"The runestones in Scosglen are fascinating. Some act as wards, but others are conduits. They tap into the deepest power of the earth itself.\" -Donan"
+    },
+    {
+      "name": "Fractured Winterglass",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fractured-winterglass.png",
+      "flavor": "Winterglass refracts light and also manipulates mana - forming complex arrays of spells and enchantments. These distinct characteristics possess great power, yet the outcomes remain unpredictable."
+    },
+    {
+      "name": "Frostburn",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/frostburn.png",
+      "flavor": "A touch so frigid it stops the heart and chills the very soul."
+    },
+    {
+      "name": "Fury of the Wilds",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/fury-of-the-wilds.png",
+      "flavor": "The ring pulses with primal power, but its design is delicate. Perhaps its main purpose is to remind the wearer that they are still human."
+    },
+    {
+      "name": "Galvanic\u00a0Azurite",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/galvanic-azurite.png",
+      "flavor": "\"This gem acts as a conduit for aetheric filaments, enabling the wielder to summon atmospheric discharge at will.\" - Excerpt from Volatus Arcanum: Of Skybinding and Stormcraft"
+    },
+    {
+      "name": "Gate of the Red Dawn",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gate-of-the-red-dawn.png",
+      "flavor": "Between fire and darkness, I hold the gate."
+    },
+    {
+      "name": "Gathlen's Birthright",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gathlens-birthright.png",
+      "flavor": "'Twas Gathlen, most tender warden of the elder realm, who reigneth o'er grove and glade. Whosoever he favors shall inherit the wilds. Utter his name, and be embraced."
+    },
+    {
+      "name": "Gauntlets of Sheol",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gauntlets-of-sheol.png",
+      "flavor": "All of Abaddon is\u00a0unshrouded before you. The denizens of Sheol tremble, for these hands are the touch of those unutterable ruins."
+    },
+    {
+      "name": "Gift of Frost",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gift-of-frost.png",
+      "flavor": "Legend says those who survive the Hall of Mirrors emerge forever changed, able to enchant objects with an innate cold."
+    },
+    {
+      "name": "Gladiator's Triumph",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gladiators-triumph.png",
+      "flavor": "The Philios Games were said to welcome the prideful, the reckless, and the condemned."
+    },
+    {
+      "name": "Gloves of the Illuminator",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gloves-of-the-illuminator.png",
+      "flavor": "After Inarius returned to Sanctuary, he sought a way back to the High Heavens. His first step was to reignite the religion he had abandoned millennia before: the Cathedral of Light."
+    },
+    {
+      "name": "Godslayer Crown",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/godslayer-crown.png",
+      "flavor": "\"The Sahptev faithful believe in a thousand and one gods. If it takes me as many lifetimes, I will find and kill them all.\"\n- Gaspar Stilbian, Veradani Outcast"
+    },
+    {
+      "name": "Gohr's Devastating Grips",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gohrs-devastating-grips.png",
+      "flavor": "\"The brutish construction of these gloves belies the strength they bestow. Gohr was clearly no craftsman, but it would be foolish to ignore the triumph of his work.\" -Barrett's Book of Implements"
+    },
+    {
+      "name": "Gospel of the Devotee",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gospel-of-the-devotee.png",
+      "flavor": "\"Tremble not before the one who has mastered a thousand incantations. Tremble before the one who has made a single spell his gospel, his body, his breath.\" -One Who Never Sleeps"
+    },
+    {
+      "name": "Grasp of Shadow",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/grasp-of-shadow.png",
+      "flavor": "Dark wisps creep hungrily across these gloves, like an assassin's blade seeking a life to steal on a moonless night."
+    },
+    {
+      "name": "Gravewalker's Hand",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/gravewalkers-hand.png",
+      "flavor": "\"There is a point one can reach, a oneness with the Balance, when a single, silent gesture is enough to summon an army of bone to your command.\" -Necromancer Mehtan"
+    },
+    {
+      "name": "Greatstaff of the Crone",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/greatstaff-of-the-crone.png",
+      "flavor": "\"She has existed in Scosglen since before Fiacla-G\u00e9ar walked the land. Her purpose is a mystery to us all. However, approach her with deference; she may grant you her counsel.\"-Airidah, to Donan"
+    },
+    {
+      "name": "Greaves of the Empty Tomb",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/greaves-of-the-empty-tomb.png",
+      "flavor": "\"The massive door to my family's crypt, which had taken a dozen men to close, was thrown open. Had I known the horrors to come I never would have set foot inside!\" -The Ebon Pages, Canto I, Verse VII"
+    },
+    {
+      "name": "Greenwalker's Oath",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/greenwalkers-oath.png",
+      "flavor": "Ci\u00f3dan was known to be a true friend of the Deep Forest. In gratitude, he was protected fiercely by nature itself."
+    },
+    {
+      "name": "Greenwalker's Signet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/greenwalkers-signet.png",
+      "flavor": "\"Do not speak to nature. Listen to it. Learn from it. That is the only true path of knowledge.\"\n-Code of the Sc\u00e9al Fada"
+    },
+    {
+      "name": "Griswold's Opus",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/griswolds-opus.png",
+      "flavor": "Griswold created wonders at his anvil. But, none ever stilled his hands - for every new blade bore dissatisfaction. Though his final work was left unfinished, it was hailed as his greatest."
+    },
+    {
+      "name": "Guise of War",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/guise-of-war.png",
+      "flavor": ""
+    },
+    {
+      "name": "Hail of Verglas",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hail-of-verglas.png",
+      "flavor": "\"Ere the age of mage and king, storms raged so dread and fell that men named it the wrath of gods. Its hail smote the earth till mountains were wrought...\" -Tome recovered from Kasama"
+    },
+    {
+      "name": "Hand of Apotheosis",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hand-of-apotheosis.png",
+      "flavor": "\"There are certain thresholds one must not cross. Not because the demonologist will lose their way back, but because they will not return the same as they were before.\" -Grimoire of Reckoning"
+    },
+    {
+      "name": "Hands of the Worldbreaker",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hands-of-the-worldbreaker.png",
+      "flavor": "\"For demons whose nature is to destroy, where does it end? If everything around them is brought to ruin, I believe their final act of destruction would be themselves.\" -Deckard Cain"
+    },
+    {
+      "name": "Hangman's Hand",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hangmans-hand.png",
+      "flavor": "\"The executioner's hands are imprinted with the essence of every life they have taken. They do not understand this, though. But we who seek Balance do.\" -Books of Kalan"
+    },
+    {
+      "name": "Harmony of Ebewaka",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/harmony-of-ebewaka.png",
+      "flavor": "Only Ebewaka has walked amid a dozen Guardians. In death, they waged war for his spirit, yet none prevailed. Thus, the Guardians shared dominion, granting Ebewaka to roam freely amid all their realms."
+    },
+    {
+      "name": "Harriers of War",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/harriers-of-war.png",
+      "flavor": ""
+    },
+    {
+      "name": "Heart of Azgar",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/heart-of-azgar.png",
+      "flavor": "\"You kept us from harm. Forever will you hold a place of honor. We will always look up to you...brother.\" -Grey of Clan Skeld"
+    },
+    {
+      "name": "Heart of War",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/heart-of-war.png",
+      "flavor": ""
+    },
+    {
+      "name": "Hecaton Chasm",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hecaton-chasm.png",
+      "flavor": "\"The creatures of Hell are craven, wretched things, clawing at scraps like mongrels. Hells' hundred hands do not fight. They clamber forward like cowards in the dark.\" -Tal Rasha"
+    },
+    {
+      "name": "Hellbrand Signet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hellbrand-signet.png",
+      "flavor": "\"The fire of that realm is not like the fire of our world. It seems alive. Not mindless, but imbued with purpose. As if it were blood flowing through unknowable veins.\" -Jere Harash"
+    },
+    {
+      "name": "Hellhammer",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hellhammer.png",
+      "flavor": "The demon prince Ikonoth slew hundreds of the Heavenly Host with this infernal hammer before falling to none other than the Archangel Imperius himself."
+    },
+    {
+      "name": "Hellhound's Sabatons",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hellhounds-sabatons.png",
+      "flavor": "\"As loyal as we may think they might be, they are still demons. And they will take any chance they can to destroy us.\" -Book of Adria"
+    },
+    {
+      "name": "Henri's Perquisition",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/slots/focus.png",
+      "flavor": "\"It's just a cat,\" said Ankaj. Her uncle leaned in, \"You are spiritborn. Look deeper.\" In its amber eyes, Ankaj saw the passing of ages, fixed on a single thought: \"Mouse.\" The cat smacked its lips."
+    },
+    {
+      "name": "Herald of Zakarum",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/herald-of-zakarum.png",
+      "flavor": "\"Praise Akarat, His will be done. Lead us to darkness, so our Light may shine and purify.\" - Zakarum prayer"
+    },
+    {
+      "name": "Herald's Morningstar",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/heralds-morningstar.png",
+      "flavor": "First in the Swan, the Herald by name. This is the star of morning that shines brightest, which marshals the order of all other celestial bodies."
+    },
+    {
+      "name": "Hesha e Kesungi",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hesha-e-kesungi.png",
+      "flavor": "Wreathed in bark and bone, these gauntlets carry the strength of old simian spirits - wardens of root and canopy."
+    },
+    {
+      "name": "Hooves of the Mountain God",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hooves-of-the-mountain-god.png",
+      "flavor": "Break their bones beneath your weight, \nFell their walls and breach their gate. \nIn his halls we'll boast and sing, \nAnd praise our honored mountain king!"
+    },
+    {
+      "name": "Howl from Below",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/howl-from-below.png",
+      "flavor": "\"Can you not hear it? That endless scream from the cold earth beneath your feet!? They are down there, trapped, blind with rage! Waiting to drag us down into the sod!\" -Ravings of Madman Gustav"
+    },
+    {
+      "name": "Hunter's Zenith",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/hunters-zenith.png",
+      "flavor": "\"By fang, claw, spear, or sword - send the bastards back to the flames from which they crawled! Soak the peat with their blood! For Fiacla-G\u00e9ar! For Scosglen!\"\n- Nafain, during the Days of Ash"
+    },
+    {
+      "name": "Iceheart Brais",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/iceheart-brais.png",
+      "flavor": "The mad artisan saw his fingers turn black from frostbite as he worked the cloth, but refused to stay the needle and thread for even a moment."
+    },
+    {
+      "name": "Ifeh's Dire Totem",
+      "slot": "totem",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ifehs-dire-totem.png",
+      "flavor": "Fiacla-G\u00e9ar's druids lived in harmony with nature. The Talons of Ifeh walked a different path. They surrendered their souls to the wilds, becoming more beast than man."
+    },
+    {
+      "name": "In-Geom",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/in-geom.png",
+      "flavor": "\"Ahh, the In-Geom! The royal smiths of Xiansai folded the spirits of not one\u2014but four tigers into the steel! Come! Put your ear to its edge. You can almost hear them... Meow!\" -Covetous Shen"
+    },
+    {
+      "name": "Indira's Memory",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/indiras-memory.png",
+      "flavor": "\"The tears of Linarian turned bloody over Indira's torn body. Many days, unyielding, he poured his magic into sundered bone and rended sinew. Though the flesh did mend, his beloved did not rise...\""
+    },
+    {
+      "name": "Infernal Homunculus",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/infernal-homunculus.png",
+      "flavor": "It grows restless in silence, thrashing against its bindings. Though the body is small, it dreams of carnage unimaginable."
+    },
+    {
+      "name": "Insatiable Fury",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/insatiable-fury.png",
+      "flavor": "When the Days of Ash began, the great druid Nafain reminded his disciples that nothing, not even the loss of their humanity, was too great a sacrifice to protect T\u00far D\u00falra from Astaroth's flames."
+    },
+    {
+      "name": "Jacinth Shell",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/jacinth-shell.png",
+      "flavor": "This ceremonial armor was once adorned during the He Sutsar Puch\u0113, where sacred blood is drawn by jacinth lancets and offered to flames. It retains the scents of incensed smoke and scorched copper."
+    },
+    {
+      "name": "Judgment of Auriel",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/judgment-of-auriel.png",
+      "flavor": "At dawn, she sits in Judgment's stead. The host shall kneel in her radiance."
+    },
+    {
+      "name": "Judicant's Glaivehelm",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/judicants-glaivehelm.png",
+      "flavor": "\"Let the righteous spear judge what man cannot. Its point unmasks the heretic, its edge silences their defiance.\" - Judicator Moseph of the Fourth Inquisition"
+    },
+    {
+      "name": "Kabraxis' Will",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/kabraxis-will.png",
+      "flavor": "In the Sunless Depths, Kabraxis wailed.\nNo vessel could bare the Imprisoned Lord.\nCreation could not sustain the road he traveled, only madness remained."
+    },
+    {
+      "name": "Kessime's Legacy",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/kessimes-legacy.png",
+      "flavor": "\"Too soon she was taken, yet Rathma let Kessime rest in death, for they both had found peace in the cycle. Upon the hill where she lay, Rathma poured forth his blood and no evil trod thereafter...\""
+    },
+    {
+      "name": "Khamsin Steppewalkers",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/khamsin-steppewalkers.png",
+      "flavor": "Once worn by the lost druids who sang the sandy gales to sleep. When their line was broken, the desert rose in mourning, staining the sky blood-red as Kehjistan choked beneath fifty years of dust."
+    },
+    {
+      "name": "Kilt of\u00a0Blackwing",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/kilt-of-blackwing.png",
+      "flavor": "\"The moors once belonged to the raven-changelings, child. They came with the full moon and read fate through the eyes of the dead. But that time has withered. Their songs are stilled.\" - Airidah"
+    },
+    {
+      "name": "Leoric's Crown",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/leorics-crown.png",
+      "flavor": "\"Heavy, isn't it?\" Leoric said, fussing with his new crown, \"The weight alone might topple me from the throne.\" Archbishop Lazarus only smiled, calm and cold. \"It catches the Light well, your grace.\""
+    },
+    {
+      "name": "Levin Grasp",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/levin-grasp.png",
+      "flavor": "The bandit lay on the floor, as a bolt of lightning arced between his friends. He watched the Sorceress walk away calmly as his friends fell to the floor, one by one."
+    },
+    {
+      "name": "Lidless Wall",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/lidless-wall.png",
+      "flavor": "Initially an unpopular choice to replace Mendeln as Deathspeaker, Daros quickly proved his worth with the creation of this masterpiece."
+    },
+    {
+      "name": "Light's Rebuke",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/lights-rebuke.png",
+      "flavor": "\"Stand tall, for on this day we bring the Light of Inarius to a land consumed by darkness!\" - Urivar, before the Battle for Scosglen"
+    },
+    {
+      "name": "Lightburst Hammer",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/lightburst-hammer.png",
+      "flavor": ""
+    },
+    {
+      "name": "Litany of Sable",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/litany-of-sable.png",
+      "flavor": "\"Adiya shrouded herself in shadow and walked amongst men. From her countless mouths poured the song of the abyss. Its sound drowned the mind in fog as she came to feed.\" -Annals of Hadal"
+    },
+    {
+      "name": "Locran's Talisman",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/locrans-talisman.png",
+      "flavor": "A single petal of the Mother's own blood, slowly wilting under glass."
+    },
+    {
+      "name": "Loyalty's Mantle",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/loyaltys-mantle.png",
+      "flavor": "During a Trial of Mists, a small spirit noticed an unclaimed boy. In pity, it spared him. \"I will follow you always,\" vowed the boy. He remained true even after Ah Bulan called the spirit home."
+    },
+    {
+      "name": "Lurid Pact",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/lurid-pact.png",
+      "flavor": "\"It glows because it is pleased.\" -Author Unknown, blood used as inscription"
+    },
+    {
+      "name": "Mace of King Leoric",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mace-of-king-leoric.png",
+      "flavor": "\"Listen, no Skeleton is gonna be my King. Leoric is King. King, so you hear me? Hail to the King!\" -Farnham"
+    },
+    {
+      "name": "Mad Wolf's Glee",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mad-wolfs-glee.png",
+      "flavor": "\"He was not a victim of the curse. He sought it out. As his muscles grew and body changed from man to beast, his laughter never ceased.\" \n\u2013 Tale of the Mad Nobleman"
+    },
+    {
+      "name": "Malefic Crescent",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/malefic-crescent.png",
+      "flavor": "\"T\u00far D\u00falra sat empty and the Cathedral sent forth two units. The full moon was thought to be a fair omen from the Heavens. They soon learned what else drew from its power.\" - History of Scosglen VI"
+    },
+    {
+      "name": "Mantle of Mountain's Fury",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mantle-of-mountains-fury.png",
+      "flavor": "\"What you feel is the Ancients high on the mountain, my son. When they stomp their feet, the earth trembles! But fear not\u2014it's our enemies they mean to warn.\" -Chieftess Naarah"
+    },
+    {
+      "name": "Mantle of the Grey",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mantle-of-the-grey.png",
+      "flavor": "The ensign bears the words:\u00a0'Beneath Saint Lalszo the Grey's gentle gaze, the cruel laid down their wrath, and the meek rose as lions. By his grace, no lost soul shall tread alone.'"
+    },
+    {
+      "name": "March of the Stalwart Soul",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/march-of-the-stalwart-soul.png",
+      "flavor": "\"...and though he marched through shadow and storm, his flame never waned. On the thirtieth day, he arrived to spread the word of Akarat's passing.\" - Scrolls of Yaerius"
+    },
+    {
+      "name": "Mark of the Old Wolf",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mark-of-the-old-wolf.png",
+      "flavor": "\"The tales spoke of a one-eyed wolf, a creature so cunning that it outsmarted the greatest trappers in the world. It makes you wonder if it was a wolf at all.\" -A History of Scosglen, Chapter IX"
+    },
+    {
+      "name": "Messerschmidt's Reaver",
+      "slot": "axe2h",
+      "mythic": false,
+      "icon": "/images/d4/slots/axe2h.png",
+      "flavor": "Before the ashes of Old Tristram had cooled, the scavengers crept in\u2014down into the crumbling cathedral to snatch anything of value. The late Prince Aidan's greataxe would fetch a fine price indeed."
+    },
+    {
+      "name": "Might of Qual-Kehk",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/might-of-qual-kehk.png",
+      "flavor": "\"Even as a boy, Qual-Kehk's strength was the stuff of legend. It was said he could split oak trees in two with one throw of his blade.\" -Feats of Arreat, Vol. IV"
+    },
+    {
+      "name": "Might of the Ursine",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/might-of-the-ursine.png",
+      "flavor": "\"To speak the tongue of a beast is more than just trading words. It changes how you see the world. It changes how you know fear, strength, and tenacity.\" -Greenwalker Ci\u00f3rdan"
+    },
+    {
+      "name": "Misericorde",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/misericorde.png",
+      "flavor": "A trapped prey only awaits a swift death. Sisters of the Sightless Eye will grant them this mercy."
+    },
+    {
+      "name": "Mj\u00f6lnic Ryng",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mj-lnic-ryng.png",
+      "flavor": "A singed wedding band, faintly crackling. It evokes an old rhyme where a bride receives a ring from her beloved, causing them to be struck thrice by lightning. Only the bride was unscathed."
+    },
+    {
+      "name": "Moloch's Beating Flame",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/molochs-beating-flame.png",
+      "flavor": "\"Therefore, behold, the days come that it shall no more be called thine own body, nor thine own heart, but the heart of Moloch, for each heartbeat shall roar with the flames of Hell...\"\u00a0-Taphya 3:26"
+    },
+    {
+      "name": "Molten Band",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/molten-band.png",
+      "flavor": "Pillaged from the charred remains of Lord Bareen. It still feels hot to the touch."
+    },
+    {
+      "name": "Morlu Fleshward",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/morlu-fleshward.png",
+      "flavor": "\"The morlu are incredibly resilient. Stories from the Sin War describe them fighting despite heavy wounds.\" -Book of Adria"
+    },
+    {
+      "name": "Mother's Embrace",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mothers-embrace.png",
+      "flavor": "\"Every tome, every scroll, every book in this temple produces the same answer. The only being willing to stand against the Eternal Conflict, against the Prime Evils, was Lilith.\"\n- Elias"
+    },
+    {
+      "name": "Mutilator Plate",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/mutilator-plate.png",
+      "flavor": "\"The Cathedral of Light's earliest attempts at crafting their penitent armor was to infuse the plate with painful blood magic, before such acts were deemed heretical.\" -Barrett's Book of Implements"
+    },
+    {
+      "name": "Nails of the Gore-Crowned",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/nails-of-the-gore-crowned.png",
+      "flavor": "\"Bind them as a sign on your hand, and the fiend shall be as frontlets between your eyes. Nail yourself to your crucibles, for pain is the road where domination is won.\" -The Magnus"
+    },
+    {
+      "name": "Nemesis Bracers",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/nemesis-bracers.png",
+      "flavor": "Though tarnished by centuries, the bright steel is unmarked by battle. It inspires courage until one sees the padding, stained black with old blood. The names of bygone owners fade in the leather."
+    },
+    {
+      "name": "New Item [PH]",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/new-item-ph.png",
+      "flavor": ""
+    },
+    {
+      "name": "Night Terror",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/night-terror.png",
+      "flavor": "\"Sleep, my child, shut fast thine eyes, \nKeep thee still until sunrise. \nAstrogha's brood will hear thy breath, \nAnd lull thee close to dreaming death.\" -Westmarch lullaby"
+    },
+    {
+      "name": "Nomad's Longing Heart",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/nomads-longing-heart.png",
+      "flavor": "\"O Crane, what news do you bring from our mountain?\nLong have I been away, in strange lands.\nI yearn for home, for the highland snows,\nWhy silent, Crane? Have you no news from Arreat?\""
+    },
+    {
+      "name": "Okun's Catalyst",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/okuns-catalyst.png",
+      "flavor": "\"Children and beast do tremble at thunder's roar, but the wise know to fear the silence of lightning.\"\u00a0- Okun, of the\u00a0Zann Esu"
+    },
+    {
+      "name": "Omen of Pain",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/omen-of-pain.png",
+      "flavor": "\"I have lost, more than I can put into words. Perhaps there are better ways to express loss than words....\" -Rathma"
+    },
+    {
+      "name": "Onyx Soul",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/onyx-soul.png",
+      "flavor": "Many adventurers have sailed the Frozen Sea, but most are lost to the depths. Legend has it the first to return spoke of a vast treasure. Alas, he could not carry it alone. Save for one relic."
+    },
+    {
+      "name": "Ophidian Iris",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ophidian-iris.png",
+      "flavor": "\"Threefold was the sight of Oriax. He stirred the wrath of his lord Baal, and his eyes were torn and cast into the dust. Lo, the viper now crawls blind, writhing in misery.\" - Librarius Ex Horadrim"
+    },
+    {
+      "name": "Orphan Maker",
+      "slot": "crossbow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/orphan-maker.png",
+      "flavor": "This crossbow is marred by a hundred battles. Mercy is its stranger. When its quarrel flies, a generation weeps."
+    },
+    {
+      "name": "Orsivane",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/orsivane.png",
+      "flavor": "Lo, its strike is thunder, its sting a dirge. Those smote are unmade, scattered as chaff before the breath of ancients."
+    },
+    {
+      "name": "Overkill",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/overkill.png",
+      "flavor": "The malformed snake creatures that live in the swamps are not content with simply killing their prey. They seem to take a malicious pleasure from inflicting as much suffering as possible before death."
+    },
+    {
+      "name": "Pact Amulet",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/pact-amulet.png",
+      "flavor": "DONOTSHIP"
+    },
+    {
+      "name": "Pact of Bone",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/pact-of-bone.png",
+      "flavor": "\"Can one befriend the dead? What loyalty is earned or granted in the act of reanimation? On this subject, there is much I have yet to understand.\" -Deckard Cain"
+    },
+    {
+      "name": "Paingorger's Gauntlets",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/paingorgers-gauntlets.png",
+      "flavor": "Crafted from fragments of Duriel's carapace, wearing these gloves, or being struck by them, causes an agonizing sensation akin to pushing one's hands through a thousand shards of glass."
+    },
+    {
+      "name": "Path of Trag'Oul",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/path-of-tragoul.png",
+      "flavor": "\"Essence flows endlessly, shifting between vessels. It is through Trag'Oul, keeper of all known and unknown, that we serve as custodians, directing essence to travel new paths.\" -Mendeln ul-Diomed"
+    },
+    {
+      "name": "Path of the Emissary",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/path-of-the-emissary.png",
+      "flavor": "\"The path remembers the feet that tread it often. It bends its course to those who never stray.\" - Tarka, the Emissary"
+    },
+    {
+      "name": "Peacemonger's Signet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/peacemongers-signet.png",
+      "flavor": "\"In Natsalarwaka, no blood shall mar the earth. Even bitter enemies must forgo their blades before entering the haven. Breaking this accord will invoke Wasipotsu's wrath.\" - Oral Oaxazi Scripture"
+    },
+    {
+      "name": "Penitent Greaves",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/penitent-greaves.png",
+      "flavor": "Remorseful devotees of the Cathedral of Light must undertake a grueling pilgrimage, journeying across the frigid glacier known as the Serac Rapture. Only then may their gravest sins be forgiven."
+    },
+    {
+      "name": "Pitfighter's Gull",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/pitfighters-gull.png",
+      "flavor": "\"Ploughin' told you already! Hidden weapons are out \u2013 Yes, especially grenades! Behave yourself, or Morrick will skin you lot.\"- Purveyor of the Gea Kul fighting pits, on the eve of Morrick's murder"
+    },
+    {
+      "name": "Protean Heart",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/protean-heart.png",
+      "flavor": "\"Nahantu is everchanging. Nahantu is everlasting. When the Burning Hells become ash and soot, and when the High Heavens come crashing down, Nahantu will remain.\" -Excerpt from Defiance of Enkasi"
+    },
+    {
+      "name": "Protection of the Prime",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/protection-of-the-prime.png",
+      "flavor": "\"To commune with spirits, listen to whispers unseen. Root yourself unto the earth and let its pulse still the mind. Hear the ancient guardians \u2013 they rise to aid you.\" -Ysevete, the First Spiritborn"
+    },
+    {
+      "name": "Purified Lightbringer",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/purified-lightbringer.png",
+      "flavor": "\"The Cathedral fled south, leaving sanctums hollow and songs unsung. What was left\u2014stone, silver, and sanctified relics\u2014were claimed and bent to the will of elder root and spirit.\" -Bryona"
+    },
+    {
+      "name": "Quarterstaff",
+      "slot": "quarterstaff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/quarterstaff.png",
+      "flavor": ""
+    },
+    {
+      "name": "Rage of Harrogath",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rage-of-harrogath.png",
+      "flavor": "Harrogath, the final bastion of resistance against Baal's assault on Mt. Arreat was destroyed along with the Worldstone. The survivors never forgave the betrayal that led to the loss of their home."
+    },
+    {
+      "name": "Raiment of the Infinite",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/raiment-of-the-infinite.png",
+      "flavor": "The power you have is never enough."
+    },
+    {
+      "name": "Raiment of the Sea",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/raiment-of-the-sea.png",
+      "flavor": "The Firstborn sorrow is not forgotten, but sleeps in the sea, and in time wakes again."
+    },
+    {
+      "name": "Rakanoth's Wake",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rakanoths-wake.png",
+      "flavor": "Tread carefully on the plains of Hell, for each step sunders the soul and shatters the mind."
+    },
+    {
+      "name": "Ramaladni's Magnum Opus",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ramaladnis-magnum-opus.png",
+      "flavor": "\"Without him the wine is less sweet, the hearth less warm, and our blades less keen. Our blood brother is gone, but Bul-Kathos willing, we will meet again one day.\"\n- Sorrowsong for Ramaladni"
+    },
+    {
+      "name": "Razorplate",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/razorplate.png",
+      "flavor": "Crafted by the cannibal Armoda, each piece of this interlocking armor has been sharpened into a knife's edge. Even a century after death, the plate remained on her corpse, unable to be removed safely."
+    },
+    {
+      "name": "Red Blessing",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/red-blessing.png",
+      "flavor": "\"The spark of life flows through blood, just as the spark of unlife flows through desiccated bone. There is power in both, if one knows how to use it.\" -Necromancer Zayl"
+    },
+    {
+      "name": "Red Sermon",
+      "slot": "sword2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/red-sermon.png",
+      "flavor": "\"Thus spake Que-Hegan Sankekur the righteous: when prayer fails man, let the blade be our psalm. May the blood of unbelievers be the ink which we write our faith anew.\" -Excerpt from Brother Ismail"
+    },
+    {
+      "name": "Rictus of Terror",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rictus-of-terror.png",
+      "flavor": "\"We found eight corpses, arranged around a summoning circle. No wounds or blood. They were frozen in mid-scream. Whatever had appeared in the circle was gone.\" -Caldeum guard report"
+    },
+    {
+      "name": "Rimeblood",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rimeblood.png",
+      "flavor": "\"We passed through the Fields of Judgement. The cold there...it chills your bones, and freezes your soul. Only I made it to the summit. The rest sit in prayer for eternity.\"\n- The Pilgrimage of Agoa"
+    },
+    {
+      "name": "Ring of Mendeln",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-mendeln.png",
+      "flavor": "The signet of Mendeln ul-Diomed, the founder of the Priests of Rathma and the first Necromancer, was lost for over 3,000 years. The immense power over death held within, however, has not diminished."
+    },
+    {
+      "name": "Ring of Red Furor",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-red-furor.png",
+      "flavor": "\"Anger brings strength but clouds the mind. You must learn to focus your fury, direct it with purpose. Keep our sacred duty at the forefront of your mind, always.\"\n- Talic, to Madawc"
+    },
+    {
+      "name": "Ring of Writhing Moon",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-writhing-moon.png",
+      "flavor": "\"Within this corpse-bound carapace we writhe. Chaotic winds converge to churn your bones. Our beat and breath a ceaseless war to break. The wretched cyclone black beyond the bounds.\" - Balazan's Dream"
+    },
+    {
+      "name": "Ring of the Midday Hunt",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-the-midday-hunt.png",
+      "flavor": "\"At midday thundered the first brother, Nyamoyo, lord of predators. Survival is his blessing, hunting is his prayer. Honor him and prowess shall be your reward.\" - The Nit\u012b S\u0113, Verse IV"
+    },
+    {
+      "name": "Ring of the Midnight Sun",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-the-midnight-sun.png",
+      "flavor": "\"At midnight laughed the second brother, Nebahayomo, spirit of cunning. Trickery is his blessing, suffering is his prayer. Honor him and shrewdness shall be your reward.\" - The Nit\u012b S\u0113, Verse V"
+    },
+    {
+      "name": "Ring of the Ravenous",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-the-ravenous.png",
+      "flavor": "\"The hunger, it starts so small, like a tickle in the back of your mind. You believe the lie that you still have control until you're so far gone you can't even recognize yourself.\" -Varyana"
+    },
+    {
+      "name": "Ring of the Sacrilegious Soul",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ring-of-the-sacrilegious-soul.png",
+      "flavor": "The mere proximity of a practitioner of such dark arts can rouse the dead and disturb those souls who have earned their rest."
+    },
+    {
+      "name": "Rod of Kepeleke",
+      "slot": "quarterstaff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rod-of-kepeleke.png",
+      "flavor": "\"Beyond the world disc doth lie the keeper serpent Kepeleke. Ceaseless the serpent grows, and thus must ever consume his own tail, lest the world be overtaken.\" - Lintel XII"
+    },
+    {
+      "name": "Rotting Lightbringer",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rotting-lightbringer.png",
+      "flavor": "\"The Cathedral fled south, leaving sanctums hollow and songs unsung. What was left - stone, silver, and sanctified relics - were claimed and bent to the will of elder root and spirit.\" -\u00a0Bryona"
+    },
+    {
+      "name": "Rustbitten Dirk",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/rustbitten-dirk.png",
+      "flavor": "This blade favors the unguarded, the unmourned, the straggler.\u00a0 For it knows that all bonds weaken in time, and that even kings may be found unguarded if patience is infinite."
+    },
+    {
+      "name": "Saboteur's Signet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/saboteurs-signet.png",
+      "flavor": "\"The element of surprise is the starting point. In this moment, be sure to finish it.\" - Kashya"
+    },
+    {
+      "name": "Sabre of Tsasgal",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sabre-of-tsasgal.png",
+      "flavor": "A foul blizzard trapped the clans after the Battle of Nine Winters. Then came a pale stallion born of the peaks, and the storm parted before him. Tsasgal, they named him - chief of all horses."
+    },
+    {
+      "name": "Sanctis of Kethamar",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sanctis-of-kethamar.png",
+      "flavor": "A token wrought from the siege of Kethamar. May the keep's defenders be anointed and borne aloft on hallow'd flame."
+    },
+    {
+      "name": "Sanguivor, Blade of Zir",
+      "slot": "sword2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sanguivor-blade-of-zir.png",
+      "flavor": "The parched blade keens, longing to serve its master."
+    },
+    {
+      "name": "Sashes of the Wretched",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sashes-of-the-wretched.png",
+      "flavor": "\"Though unruly, demons are compelled to abide by certain rules. When a pact is forged, whether by force or choice, it must be upheld.\" -Deckard Cain"
+    },
+    {
+      "name": "Scepter of the Three",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/scepter-of-the-three.png",
+      "flavor": "\"The Primes warred, but not for glory. They did so for the joy of mayhem. How many legions of demons died simply to delight the lords of Hell?\" -Tal Rasha"
+    },
+    {
+      "name": "Scorn of the Earth",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/scorn-of-the-earth.png",
+      "flavor": "\"Sky Spirits weave the winds. Thunder is their laughter and auroras their crowns. Those they bless learn to scorn the earth, for from above, it is but a distant memory.\" - Lintel VII"
+    },
+    {
+      "name": "Scoundrel's Kiss",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/scoundrels-kiss.png",
+      "flavor": "\"This'll blow your hair back.\" \n- Lyndon"
+    },
+    {
+      "name": "Scoundrel's Leathers",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/scoundrels-leathers.png",
+      "flavor": "\"Rumor has it he lost them in a game of Skull & Anchor, but the boss is a devil with the dice. I think he wanted to give the poor sod something to keep him warm without wounding his pride.\"\n- Elstir"
+    },
+    {
+      "name": "Scourge of Duriel",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/scourge-of-duriel.png",
+      "flavor": "\"Whereas Andariel relishes the anticipation of pain and the fear it creates, Duriel only cares of the existence and propagation of agony.\" -Book of Adria"
+    },
+    {
+      "name": "Sea Lord's Fine Gloves",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sea-lords-fine-gloves.png",
+      "flavor": "Pirates rarely gather under a single Captain, but when they do, they raid from Skovos to Xiansai. The last was known as the Scourge of the Twin Seas, and left a crimson wake for decades."
+    },
+    {
+      "name": "Seal of the Ophanim",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/seal-of-the-ophanim.png",
+      "flavor": "Upon the seal was graven the Name of the Ophanim. And though they were not demon, their will bent the same."
+    },
+    {
+      "name": "Seal of the Second Trumpet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/seal-of-the-second-trumpet.png",
+      "flavor": "\"So is it written: when the Second Trumpet sounds, the wicked shall fall as stars cast down from their firmament.\" - Canticle of the Judgement, Verse XII"
+    },
+    {
+      "name": "Seed of Horazon",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/seed-of-horazon.png",
+      "flavor": "\"In all dealings with Hells' spawn, names are both key and chain. To speak a demon's true name is to invite its presence, and seize some small dominion over it.\" -Master Horazon"
+    },
+    {
+      "name": "Sepazontec",
+      "slot": "quarterstaff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sepazontec.png",
+      "flavor": "To the silent skies, the hunter Etzlek raised his staff and then smote the numen. \"Release her!\" came his cries as he desecrated the hallowed ground. On the third strike, the spirit answered..."
+    },
+    {
+      "name": "Shanar's Resonance",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/shanars-resonance.png",
+      "flavor": "Mage halls across Sanctuary boast of their prodigious alumni, trained from an early age. However, one might argue that these talented children would have become powerful Wizards in their own right."
+    },
+    {
+      "name": "Shard of Verathiel",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/shard-of-verathiel.png",
+      "flavor": "This blade once bore divine purpose wielded by the angel Verathiel. Like its keeper, the sword fell to Infernal depths. Yet beneath this corruption, is a heartbeat of a past memory, holding steadfast."
+    },
+    {
+      "name": "Shroud of Khanduras",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/shroud-of-khanduras.png",
+      "flavor": "\"In fairer times, the Emperor gifted Prince Aidan a gilded shroud. Still a boy, not yet full height, it dwarfed poor Aidan. Briefly, Leoric's growing madness abated from laughter.\" -Deckard Cain"
+    },
+    {
+      "name": "Shrouded Gift",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/shrouded-gift.png",
+      "flavor": "\"Deep in the Labyrinth, I found true darkness. The Hidden became my shadow, their attacks sudden and relentless. But I studied them, and found I too can enter the ether.\" -Moreina's Journals"
+    },
+    {
+      "name": "Sidhe Bindings",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sidhe-bindings.png",
+      "flavor": "\"While known for their proclivity for mischief, the Sidhe, as the Druids call them, are fiercely loyal and will defend all they consider friend...\"\u00a0 - Sarnakyle"
+    },
+    {
+      "name": "Signet of Pelghain",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/signet-of-pelghain.png",
+      "flavor": "Ksathra's strike roiled the seas, swallowing the land. The sky raged, unleashing devastating storms. In a moment, their empire gone. Their bond forever broken. Her sister, no more."
+    },
+    {
+      "name": "Sire of Sin",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sire-of-sin.png",
+      "flavor": "\"Azmodan has plied the honeyed lures of sin. Where terror and hatred break the soul, temptation bends the faithful knee for use.\" -Of Primes and Lesser Evils, Volume I"
+    },
+    {
+      "name": "Skyhunter",
+      "slot": "bow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/skyhunter.png",
+      "flavor": "\"Genai took up her bow and aimed at the sun itself. The light burned her eyes, but her arrow flew true. Wounded, the sun hid, and brought forth the first night.\"\n- Fable of the Great Sky-Hunt"
+    },
+    {
+      "name": "Sliver of Hate",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sliver-of-hate.png",
+      "flavor": "\"The path ahead is steep. My blessing will guide you. Tread without fear.\" \n- Mephisto"
+    },
+    {
+      "name": "Snake Glaive",
+      "slot": "glaive",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/snake-glaive.png",
+      "flavor": ""
+    },
+    {
+      "name": "Soulbrand",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/soulbrand.png",
+      "flavor": "\"To create such an artifact would require an impossible mastery over alchemy, transmutation and the subtle magics of the soul. By all rights, it should not exist, yet it does.\"\n- Artisan Callas"
+    },
+    {
+      "name": "Spine of Tathamet",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/spine-of-tathamet.png",
+      "flavor": "\"...Tathamet's blackened, smoldering husk spiraled into the lower darkness of reality. From his putrid flesh grew the realms of the Burning Hells.\" -The Black Book of Lam Esen"
+    },
+    {
+      "name": "Squirt's Blouse",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/squirts-blouse.png",
+      "flavor": "It looks like the blouse of a street urchin with a crude stone pendant. But the inside is lined with hidden pockets and sinister sheathes. And on the back of the pendant? A old runic word: \"Kantwirt.\""
+    },
+    {
+      "name": "Staff of Endless Rage",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/staff-of-endless-rage.png",
+      "flavor": "\"Leaving even blackened bones for your kin to mourn is too good an end for you.\" \n- Josiah"
+    },
+    {
+      "name": "Staff of Lam Esen",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/staff-of-lam-esen.png",
+      "flavor": "\"Also known as the Greatstaff of the Old Religion, this powerful relic is one of only a small handful of Skatsimi artifacts that have survived to this day.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Staff of Zerae",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/staff-of-zerae.png",
+      "flavor": "\"To walk the Path of Zerae, do not seek to control the storm within. Lose yourself to it, let it leave your body and become your shroud. Then you will see yourself as its master.\" -Queen Xaera"
+    },
+    {
+      "name": "Starfall Coronet",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/starfall-coronet.png",
+      "flavor": "\"The elders say they saw a star falling from the sky many years ago. A sign from the heavens that the end times were nigh. A rallying cry to take up arms and protect Sanctuary!\"\n- Crusader Hamilton"
+    },
+    {
+      "name": "Stone of Jordan",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/stone-of-jordan.png",
+      "flavor": "Nine out of ten appraisers would see a dull stone. Crudely cut. Simply set. But a trained eye might see past the illusion placed by its Ammuit craftsman...and marvel at the wellspring of magic within."
+    },
+    {
+      "name": "Stone of Vehemen",
+      "slot": "totem",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/stone-of-vehemen.png",
+      "flavor": "Long ago, the Stone Clan laid the foundations of Old Kurast. They shaped earthen marvels, but wars with the Vizjerei turned chisel into spear. Now the only stone they wield is when cast against foe."
+    },
+    {
+      "name": "Storm's Companion",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/storms-companion.png",
+      "flavor": "\"The storm's rage is my own, brother. I call, and the skies roar in reply.\"\n- Vasily, to Bul-Kathos"
+    },
+    {
+      "name": "Strides of War",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/strides-of-war.png",
+      "flavor": ""
+    },
+    {
+      "name": "Strike of Stormhorn",
+      "slot": "focus",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/strike-of-stormhorn.png",
+      "flavor": "The height of the Moon Clan's power brought a beast that instilled dread upon Khanduras. More demon than Khazra, the one dubbed the Stormhorn left charred brands where cities once stood."
+    },
+    {
+      "name": "Sunbird's Gorget",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sunbirds-gorget.png",
+      "flavor": "Long ago, the Sunbird swallowed the sun whole. In the dark, the Spiritborn Xipil crawled to its nest and tore the sun free from the bird's gullet. Since, its throat was scorched red for its folly."
+    },
+    {
+      "name": "Sunbrand",
+      "slot": "mace",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sunbrand.png",
+      "flavor": "\"The sun looked upon man and judged him unworthy. In wrath, the sins of the faithless were scourged in flame upon their flesh. And the day was made pure again.\" - Canticle of the Penitent, Verse XV"
+    },
+    {
+      "name": "Sundered Night",
+      "slot": "axe2h",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sundered-night.png",
+      "flavor": "\"Heat struck my face and I thought the sun had risen early. Each swing of the hammer cleaved through the hordes, and every man shouted, wild with awe: The night ends!\" - Survivor, Battle of Westmarch"
+    },
+    {
+      "name": "Sunstained\u00a0War-Crozier",
+      "slot": "quarterstaff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/sunstained-war-crozier.png",
+      "flavor": "\"A relic of an old, forgotten religion lost to time and expansion. The staff retains a faint warmth as if still blessed by the dead god it once served.\" - Ser Paget's notes from the Tiklan excavation"
+    },
+    {
+      "name": "Supplication",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/supplication.png",
+      "flavor": "The scroll's words are known to the knight alone. He supplicates to his sworn oath, lest his faith and blade find no purchase."
+    },
+    {
+      "name": "Tal Rasha's Iridescent Loop",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/tal-rashas-iridescent-loop.png",
+      "flavor": "\"Fool said he dug it out of the sands near Lut Gholein with a few other 'worthless trinkets'. I hid my delight at receiving such a treasure in exchange for a meager handful of coins.\"\n- Rakhaan"
+    },
+    {
+      "name": "Tassets of the Dawning Sky",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/tassets-of-the-dawning-sky.png",
+      "flavor": "\u201cMay the Light of Father Inarius shine down upon all weary travelers of this holy land. Turn your face toward his radiance and find your strength renewed.\u201d\n- Statue Inscription"
+    },
+    {
+      "name": "Temerity",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/temerity.png",
+      "flavor": "\"The revelation that master tailor Callas was in fact a witch only served to further fuel the desire for her uniquely enchanted legwraps.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Tempest Roar",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/tempest-roar.png",
+      "flavor": "\"Listen, child, to the music of the storm. It has its own rhythm. Its own melody. Hear how beautifully it sings, and perhaps one day you will be able to join in its harmony.\"\n\u2013 Airidah"
+    },
+    {
+      "name": "The Basilisk",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-basilisk.png",
+      "flavor": "\"Well did she feed her children, and well did her children feed her.\" -Scosglen folktale"
+    },
+    {
+      "name": "The Blade of Sight Aflame",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-blade-of-sight-aflame.png",
+      "flavor": "The third lord of Hashir hungered to see all beneath his rule. A Warlock obliged and bound a demon into steel.\u00a0The king bore the blade\u00a0and beheld how his realm was cast down before him."
+    },
+    {
+      "name": "The Butcher's Cleaver",
+      "slot": "axe",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-butchers-cleaver.png",
+      "flavor": "A nightmarish amalgam of blood, bone and steel, this axe is as horrific, and as deadly, as its creator."
+    },
+    {
+      "name": "The Eightfold Idol",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-eightfold-idol.png",
+      "flavor": "\"There are depths of the Hells, and even deeper still in the Abyss, where the nameless await their appointed hour. They whisper truths forbidden that erode the mind even as they enlighten it.\" -Elias"
+    },
+    {
+      "name": "The Fecund Seal",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-fecund-seal.png",
+      "flavor": "\"The apprentice called for one. Two answered. Then the third crawled out afterward, unfinished, screaming like it had been torn free too early.\" -Master\u00a0Azevera"
+    },
+    {
+      "name": "The Furnace",
+      "slot": "mace2h",
+      "mythic": false,
+      "icon": "/images/d4/slots/mace2h.png",
+      "flavor": "\"What plague has befouled, let fire make clean. What agony these good people have suffered, let it settle quietly in the dust.\" -General Arenton"
+    },
+    {
+      "name": "The Gloom Ward",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-gloom-ward.png",
+      "flavor": "\"Necromancers uphold the Balance between Light and Dark, life and death. Yet it is only natural, only human, that an individual might tend toward one or the other.\" -Deckard Cain"
+    },
+    {
+      "name": "The Hand of Naz",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-hand-of-naz.png",
+      "flavor": "Legends say that the Hand of Naz was not made, but cursed into being. Woe to the living who unearth it, for the price is the same regardless of form. The cavity where a gem once lay is empty."
+    },
+    {
+      "name": "The Hemat Stone",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-hemat-stone.png",
+      "flavor": "The warlock stared into the blood-stone until his eyes were scorched with dread knowledge. He felt an infernal current awaken in his veins\u2014a plague of visions, malice, and command over the occult."
+    },
+    {
+      "name": "The Maestro",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-maestro.png",
+      "flavor": "\"I am a symphony of blades at your disposal. No need to get your hands dirty, I will deal with any blood or body work. So, how much gold do you have?\" -Mouse, Assassin for Hire"
+    },
+    {
+      "name": "The Mortacrux",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-mortacrux.png",
+      "flavor": "One of a pair of twin daggers, forbidden from ever meeting. Nearby corpses shudder in its presence."
+    },
+    {
+      "name": "The Oculus",
+      "slot": "wand",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-oculus.png",
+      "flavor": "\"The rhythm of the orb, which had pulsed steadily for five centuries, quickened as its owner took his final ragged breaths. It were as if some intelligence within reveled in the sight.\"\n- Master Eos"
+    },
+    {
+      "name": "The Open Eye of Gorgorra",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-open-eye-of-gorgorra.png",
+      "flavor": "Ever watchful were the Patriarchs, as the Unclean slowly made their way out of the Dreadlands."
+    },
+    {
+      "name": "The Relentless Heart",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-relentless-heart.png",
+      "flavor": "\"Though he was stuck with a dozen arrows, the barbarian charged Rakkis' lines and swept away any who stood before him. The more he bled, the more ferocious were his blows.\" -The Chronicles of Rakkis"
+    },
+    {
+      "name": "The Third Blade",
+      "slot": "sword",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-third-blade.png",
+      "flavor": "\"Restraint, mercy, honor...these are shackles, forged by the weak and the conquered.\" -Hephasto, the Armorer"
+    },
+    {
+      "name": "The Umbracrux",
+      "slot": "dagger",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-umbracrux.png",
+      "flavor": "One of a pair of twin daggers, forbidden from ever meeting. Bitter voices whisper from the blade."
+    },
+    {
+      "name": "The Undercrown",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-undercrown.png",
+      "flavor": "\"There is no true death. There is only the movement from one world to another. I stand in both of these worlds.\" -Necromancer Zayl"
+    },
+    {
+      "name": "The Unmaker",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/the-unmaker.png",
+      "flavor": "Urzael rent asunder his own wings and armor with a fury unbridled. For never would he bow to the doom of mortals, nor endure defeat at their lowly hands."
+    },
+    {
+      "name": "Thousand-Eye Reaver",
+      "slot": "axe",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/thousand-eye-reaver.png",
+      "flavor": "No falsehood could endure the Thousand-Eyed King's reaver nor its countless eyes. Their gaze was bright and terrible, consumed with a world-eating hunger."
+    },
+    {
+      "name": "Thrice-Woven Nightmare",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/thrice-woven-nightmare.png",
+      "flavor": "Faint screams emanate from the gloves, as if they are imbued with a hundred primal fears."
+    },
+    {
+      "name": "Thundergod's Blessing",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/thundergods-blessing.png",
+      "flavor": "The Unclean burned the Monastery, and all knowledge within. They beheaded the monks, and kept their tongues. All artifacts were lost - save for this."
+    },
+    {
+      "name": "Tibault's Will",
+      "slot": "pants",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/tibaults-will.png",
+      "flavor": "\"The younger apprentices think wearing heavy plate in the swamps is foolish. They fail to understand that our armor is our legacy, and without it we are nothing.\"\n- Crusader Pembroke"
+    },
+    {
+      "name": "Tuskhelm of Joritz the Mighty",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/tuskhelm-of-joritz-the-mighty.png",
+      "flavor": "As he fought with side by side with Raekor to liberate the labor camp, Joritz claimed this dented helm from a fallen foe. As his legend grew, its unique shape became synonymous with his great deeds."
+    },
+    {
+      "name": "Twin Strikes",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/twin-strikes.png",
+      "flavor": "\"When hitting it once doesn't kill it, hit it twice.\" -Bear Tribe Proverb"
+    },
+    {
+      "name": "Ugly Bastard Helm",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ugly-bastard-helm.png",
+      "flavor": "\"Ah, Burning Hells. You look like one of Zolmog's inbred bastards.\" -Varyana"
+    },
+    {
+      "name": "Unbroken Chain",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/unbroken-chain.png",
+      "flavor": "After the warmaster Raekor freed her people, the Oxen tribe continued to wear their collars and chains to honor those who died in thralldom under the Samauren Empire."
+    },
+    {
+      "name": "Unsung Ascetic's Wraps",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/unsung-ascetics-wraps.png",
+      "flavor": "\"The storm caller returns, day after day, demanding to meet the Tree. He beats his chest and demonstrates his powers, refusing to believe that he will never be chosen.\"\n- Excerpt from Gulyas' Diary"
+    },
+    {
+      "name": "Vasily's Prayer",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/vasilys-prayer.png",
+      "flavor": "\"Roots from the Great Oak growing at the seaward statue of Vasily will, on rare occasions, be found twisted back upon themselves, suffused with ferocious magic.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Vengeful Sinew",
+      "slot": "chest",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/vengeful-sinew.png",
+      "flavor": "\"There have been tales, though I cannot attest to their veracity, of Necromancers drawing power from their anger, from their belief that the world has shifted far out of Balance.\" -Deckard Cain"
+    },
+    {
+      "name": "Vision of the Firestorm",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/vision-of-the-firestorm.png",
+      "flavor": "\"From the Judgement of Inarius, the Firstborn faced suffering of all kinds. As the land of Atanos sank, the land of Skartara erupted...\" -Tome recovered from Kasama"
+    },
+    {
+      "name": "Vox Omnium",
+      "slot": "staff",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/vox-omnium.png",
+      "flavor": "Your incantations are echoed by a chorus of the damned. Wield their torment, their vengeance, their pain against the Hellborne that tortured them."
+    },
+    {
+      "name": "Ward of the White Dove",
+      "slot": "shield",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/ward-of-the-white-dove.png",
+      "flavor": "\"Of the world's first light she was borne - the White Dove, our most radiant Lady. Her visage none may behold, yet all warmed by dawn may call her friend.\" - Sir Morna, Order of the Dove"
+    },
+    {
+      "name": "Waxing Gibbous",
+      "slot": "axe",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/waxing-gibbous.png",
+      "flavor": "The nights preceding the full moon are sometimes far more dangerous than the event itself. The frenzy has begun to rise, yet the night is just dark enough to obscure a hunter from their prey's sight."
+    },
+    {
+      "name": "Wendigo Brand",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wendigo-brand.png",
+      "flavor": "In the first winters, a desperate spirit awoke within the hearts of men. Where famine walked, the spirit strengthened. When men consumed one another, it found its name."
+    },
+    {
+      "name": "Widow's Web",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/widows-web.png",
+      "flavor": "\"One touch is all it took. She looked into my eyes, and I understood her hunger, endless and painful. I will start with the taverns and find a strong one, with strong blood.\" -Jios, Sarat's Servant"
+    },
+    {
+      "name": "Wildheart Hunger",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wildheart-hunger.png",
+      "flavor": "Do not seek comfort in the shapes of the moon, beastwalker. Its pallid light awakens a yawning hunger. Call the beast, but do not tarry. Lest you never return to your own skin."
+    },
+    {
+      "name": "Will of Rathma",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/will-of-rathma.png",
+      "flavor": "\"Prey not on innocents, but instill fear in those who would.\" -Books of Kalan"
+    },
+    {
+      "name": "Will of Stone",
+      "slot": "helm",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/will-of-stone.png",
+      "flavor": "\"You Vizjerei believe your magic is greater than ours, so you come here seeking to become the master of this land? But I am a druid. I am the land!\" -Druid Saoirse, at the defeat of Mage Lord Emre"
+    },
+    {
+      "name": "Wilted Potential",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wilted-potential.png",
+      "flavor": "A relic of Yorin's ill-starred tempering. Regardless of success, Donan proudly displayed them all upon the mantelpiece... in fairer days."
+    },
+    {
+      "name": "Windforce",
+      "slot": "bow",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/windforce.png",
+      "flavor": "\"There have been numerous world-shaping conflicts throughout history. This bow has been found on the battlefield of every one, and always in the hands of the victors.\"\n- Barrett's Book of Implements"
+    },
+    {
+      "name": "Word of Hakan",
+      "slot": "amulet",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/word-of-hakan.png",
+      "flavor": "\"Let the great gates of Caldeum be sealed. Let its proud walls stand fiercely defended. The rest of Kehjistan may suffer this plague, but my city, and my people, will not.\"\n- Proclamation of Hakan II"
+    },
+    {
+      "name": "Wound Drinker",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wound-drinker.png",
+      "flavor": "The inner curve of this band is lined with thorns that tear the skin whenever it is unbound."
+    },
+    {
+      "name": "Wreath of Auric Laurel",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wreath-of-auric-laurel.png",
+      "flavor": "\"No darkness may crown the brow that bears this light. Its radiance shall endure beyond the fall of stars.\" -\u00a0Litany of Purity, Verse VII"
+    },
+    {
+      "name": "Writhing Band of Trickery",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/writhing-band-of-trickery.png",
+      "flavor": "The ring shifts and spins on your finger as the forces within desperately attempt to escape."
+    },
+    {
+      "name": "Wushe Nak Pa",
+      "slot": "glaive",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wushe-nak-pa.png",
+      "flavor": "\"Fear not the limits of your flesh, Spiritborn!\u00a0 As our ancestors said: wushe nak pa! Transcend your being!\" - Maka"
+    },
+    {
+      "name": "Wyrdskin",
+      "slot": "gloves",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/wyrdskin.png",
+      "flavor": "Each touch dulls pain. Enemies feel their vigor unravel as the poison withers their marrow and drinks deep of their strength."
+    },
+    {
+      "name": "X'Fal's Corroded Signet",
+      "slot": "ring",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/xfals-corroded-signet.png",
+      "flavor": "Skulking in the shadows of the Realm of Destruction, the Scarred Baron plots the downfall of the mortal who banished him there."
+    },
+    {
+      "name": "Yen's Blessing",
+      "slot": "boots",
+      "mythic": false,
+      "icon": "/images/d4/maxroll/uniques/yens-blessing.png",
+      "flavor": "These greaves are imbued with the divine blessing of Yen, the Veradani goddess of restoration. They bestow the wearer a revitalizing strength that enhances their own."
+    }
+  ]
+}

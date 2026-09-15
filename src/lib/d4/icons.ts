@@ -8,25 +8,27 @@ export function slugify(name: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-export function slotIcon(slot: string) {
+export function paintedSlotIcon(slot: string) {
   return `/images/d4/slots/${slot}.png`;
 }
 
-export function uniqueIcon(name: string) {
-  return `/images/d4/uniques/${slugify(name)}.png`;
+export function slotIcon(slot: string) {
+  return `/images/d4/maxroll/slots/${slot}.png`;
 }
 
-export function itemIcon(item: { uniqueName?: string; slot: string; name?: string }) {
+export function uniqueIcon(name: string) {
+  return `/images/d4/maxroll/uniques/${slugify(name)}.png`;
+}
+
+export function itemIcon(item: {
+  uniqueName?: string;
+  slot: string;
+  name?: string;
+  rarity?: string;
+}) {
   if (item.uniqueName) return uniqueIcon(item.uniqueName);
-  if (item.name) {
-    const slug = slugify(item.name);
-    if (
-      /^(harlequin|heir-of|shroud-of-false|tyrael|ring-of-starless|andariel|doombringer|the-grandfather|melted-heart|nesekem|ahavarion)/.test(
-        slug,
-      )
-    ) {
-      return uniqueIcon(item.name);
-    }
+  if (item.rarity === "unique" || item.rarity === "mythic") {
+    if (item.name) return uniqueIcon(item.name);
   }
   return slotIcon(item.slot);
 }

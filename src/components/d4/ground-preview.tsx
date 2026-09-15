@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { generateGroundDrops, seedFromFilter } from "@/lib/d4/drops";
 import { matchItem } from "@/lib/d4/evaluate";
-import { slotIcon } from "@/lib/d4/icons";
 import type { GroundDrop } from "@/lib/d4/types";
 import { useAsh } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -83,7 +82,7 @@ export function GroundPreview() {
                   width={40}
                   height={40}
                   onError={(e) => {
-                    e.currentTarget.src = slotIcon(item.slot);
+                    e.currentTarget.src = `/images/d4/slots/${item.slot}.png`;
                   }}
                 />
                 <span className={cn("loot-drop-name", color ? undefined : RARITY_CLASS[item.rarity])}>

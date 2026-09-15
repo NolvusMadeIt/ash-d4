@@ -1,0 +1,1662 @@
+[
+  {
+    "name": "Ahavarion, Spear of Lycander",
+    "mythic": true,
+    "slot": "staff"
+  },
+  {
+    "name": "Andariel's Visage",
+    "mythic": true,
+    "slot": "helm"
+  },
+  {
+    "name": "Doombringer",
+    "mythic": true,
+    "slot": "sword"
+  },
+  {
+    "name": "El'Druin, Sword of Justice",
+    "mythic": true,
+    "slot": "sword"
+  },
+  {
+    "name": "Harlequin Crest",
+    "mythic": true,
+    "slot": "helm"
+  },
+  {
+    "name": "Heir of Perdition",
+    "mythic": true,
+    "slot": "helm"
+  },
+  {
+    "name": "Hellfire Torch",
+    "mythic": true,
+    "slot": "charm"
+  },
+  {
+    "name": "Melted Heart of Selig",
+    "mythic": true,
+    "slot": "amulet"
+  },
+  {
+    "name": "Mythic Unique Horadric Seal",
+    "mythic": true,
+    "slot": "seal"
+  },
+  {
+    "name": "Nesekem, the Herald",
+    "mythic": true,
+    "slot": "glaive"
+  },
+  {
+    "name": "Ring of Starless Skies",
+    "mythic": true,
+    "slot": "ring"
+  },
+  {
+    "name": "Seal of the Diamond Mind",
+    "mythic": true,
+    "slot": "seal"
+  },
+  {
+    "name": "Seal of the Golden Epiphany",
+    "mythic": true,
+    "slot": "seal"
+  },
+  {
+    "name": "Seal of the Severed Finger",
+    "mythic": true,
+    "slot": "seal"
+  },
+  {
+    "name": "Shattered Vow",
+    "mythic": true,
+    "slot": "polearm"
+  },
+  {
+    "name": "Shroud of False Death",
+    "mythic": true,
+    "slot": "chest"
+  },
+  {
+    "name": "The Grandfather",
+    "mythic": true,
+    "slot": "sword2h"
+  },
+  {
+    "name": "Tyrael's Might",
+    "mythic": true,
+    "slot": "chest"
+  },
+  {
+    "name": "(PH) Template Unique",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "100,000 Steps",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Accord of the Wilds",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ae'grom's Schism",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Airidah's Inexorable Will",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Anathema of the Primes",
+    "mythic": false,
+    "slot": "sword2h"
+  },
+  {
+    "name": "Ancients' Oath",
+    "mythic": false,
+    "slot": "axe2h"
+  },
+  {
+    "name": "Annihilus",
+    "mythic": false,
+    "slot": "seal"
+  },
+  {
+    "name": "Arcadia",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Argent Veil",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Arioc's Needle",
+    "mythic": false,
+    "slot": "polearm"
+  },
+  {
+    "name": "Arreat's Bearing",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Asheara's Khanjar",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Assassin's Stride",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Autumnal Crown",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Axial Conduit",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Azurewrath",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Balazan's Maxtlatl",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Band of First Breath",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Bands of Ichorous Rose",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Bane of\u00a0Ahjad-Den",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Banished Lord's Talisman",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Bastion of Sir Matthias",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Battle Trance",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Beastfall Boots",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Bell of the Bovine",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Bindings of Attrition",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Black River",
+    "mythic": false,
+    "slot": "scythe"
+  },
+  {
+    "name": "Blood Artisan's Cuirass",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Blood Moon Breeches",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Blood Wake",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Blood-Mad Idol",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Bloodless Scream",
+    "mythic": false,
+    "slot": "scythe2h"
+  },
+  {
+    "name": "Blue Rose",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Boost Dagger",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Boost Helm",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Boost Pants",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Boost Scythe",
+    "mythic": false,
+    "slot": "scythe2h"
+  },
+  {
+    "name": "Boost Staff",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Bridle of Tor'Baalos",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Bucrani's Grip",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Bucrani's Resolve",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Bucrani's Tread",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Bucrani's Will",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Cage of Madness",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Cassia's Grace",
+    "mythic": false,
+    "slot": "bow"
+  },
+  {
+    "name": "Cathedral's Song",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Chainscourged Mail",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Cluckeye",
+    "mythic": false,
+    "slot": "bow"
+  },
+  {
+    "name": "Cluckonomicon",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Condemnation",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Coop de Gr\u00e2ce",
+    "mythic": false,
+    "slot": "polearm"
+  },
+  {
+    "name": "Cowl of Malefic Torment",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Cowl of the Nameless",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Craze of the Dead God",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Crown of Lucion",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Cruor's Embrace",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Dark Howl",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Dark Stalker's Medallion",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Dawnfire",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Death's Pavane",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Deathgrip",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Deathless Visage",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Deathmask of Nirmitruq",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Deathspeaker's Pendant",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Desperate March",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Dirge of Airidah",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Dirge of Odium",
+    "mythic": false,
+    "slot": "axe2h"
+  },
+  {
+    "name": "Dolmen Stone",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Drognan's Anguish",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Eaglehorn",
+    "mythic": false,
+    "slot": "bow"
+  },
+  {
+    "name": "Earthbreaker",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ebonpiercer",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Echo of Kwatli",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Eggcecutioner",
+    "mythic": false,
+    "slot": "scythe2h"
+  },
+  {
+    "name": "Eggis",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Elegy",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Emberfury",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Emblem of Staalbreak",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Endurant Faith",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Esadora's Overflowing Cameo",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Esu's Heirloom",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Etna's Lost Dagger",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Eye of Baal",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Eyes in the Dark",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Fang of the Vipermagi",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Fields of Crimson",
+    "mythic": false,
+    "slot": "sword2h"
+  },
+  {
+    "name": "Fist of the Iron Rose",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Fists of Fate",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Fists of War",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Flamescar",
+    "mythic": false,
+    "slot": "wand"
+  },
+  {
+    "name": "Flameweaver",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Fleshrender",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Fleshwrit Carapace",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Flickerstep",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Footfalls of the Waning World",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Fractured Runestone",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Fractured Winterglass",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Frostburn",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Fury of the Wilds",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Galvanic\u00a0Azurite",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Gate of the Red Dawn",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Gathlen's Birthright",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Gauntlets of Sheol",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Gift of Frost",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Gladiator's Triumph",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Gloves of the Illuminator",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Godslayer Crown",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Gohr's Devastating Grips",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Gospel of the Devotee",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Grasp of Shadow",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Gravewalker's Hand",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Greatstaff of the Crone",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Greaves of the Empty Tomb",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Greenwalker's Oath",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Greenwalker's Signet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Griswold's Opus",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Guise of War",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Hail of Verglas",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Hand of Apotheosis",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Hands of the Worldbreaker",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Hangman's Hand",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Harmony of Ebewaka",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Harriers of War",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Heart of Azgar",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Heart of War",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Hecaton Chasm",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Hellbrand Signet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Hellhammer",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "Hellhound's Sabatons",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Henri's Perquisition",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Herald of Zakarum",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Herald's Morningstar",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Hesha e Kesungi",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Hooves of the Mountain God",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Howl from Below",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Hunter's Zenith",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Iceheart Brais",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Ifeh's Dire Totem",
+    "mythic": false,
+    "slot": "totem"
+  },
+  {
+    "name": "In-Geom",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Indira's Memory",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Infernal Homunculus",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Insatiable Fury",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Jacinth Shell",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Judgment of Auriel",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Judicant's Glaivehelm",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Kabraxis' Will",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Kessime's Legacy",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Khamsin Steppewalkers",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Kilt of\u00a0Blackwing",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Leoric's Crown",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Levin Grasp",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Lidless Wall",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Light's Rebuke",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Lightburst Hammer",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Litany of Sable",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Locran's Talisman",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Loyalty's Mantle",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Lurid Pact",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Mace of King Leoric",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Mad Wolf's Glee",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Malefic Crescent",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Mantle of Mountain's Fury",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Mantle of the Grey",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "March of the Stalwart Soul",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Mark of the Old Wolf",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Messerschmidt's Reaver",
+    "mythic": false,
+    "slot": "axe2h"
+  },
+  {
+    "name": "Might of Qual-Kehk",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Might of the Ursine",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Misericorde",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Mj\u00f6lnic Ryng",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Moloch's Beating Flame",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Molten Band",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Morlu Fleshward",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Mother's Embrace",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Mutilator Plate",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Nails of the Gore-Crowned",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Nemesis Bracers",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "New Item [PH]",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Night Terror",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Nomad's Longing Heart",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Okun's Catalyst",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Omen of Pain",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Onyx Soul",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Ophidian Iris",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Orphan Maker",
+    "mythic": false,
+    "slot": "crossbow"
+  },
+  {
+    "name": "Orsivane",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Overkill",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "Pact Amulet",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Pact of Bone",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Paingorger's Gauntlets",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Path of Trag'Oul",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Path of the Emissary",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Peacemonger's Signet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Penitent Greaves",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Pitfighter's Gull",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Protean Heart",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Protection of the Prime",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Purified Lightbringer",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "Quarterstaff",
+    "mythic": false,
+    "slot": "quarterstaff"
+  },
+  {
+    "name": "Rage of Harrogath",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Raiment of the Infinite",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Raiment of the Sea",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Rakanoth's Wake",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Ramaladni's Magnum Opus",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Razorplate",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Red Blessing",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Red Sermon",
+    "mythic": false,
+    "slot": "sword2h"
+  },
+  {
+    "name": "Rictus of Terror",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Rimeblood",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Ring of Mendeln",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of Red Furor",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of Writhing Moon",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of the Midday Hunt",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of the Midnight Sun",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of the Ravenous",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Ring of the Sacrilegious Soul",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Rod of Kepeleke",
+    "mythic": false,
+    "slot": "quarterstaff"
+  },
+  {
+    "name": "Rotting Lightbringer",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "Rustbitten Dirk",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "Saboteur's Signet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Sabre of Tsasgal",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Sanctis of Kethamar",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Sanguivor, Blade of Zir",
+    "mythic": false,
+    "slot": "sword2h"
+  },
+  {
+    "name": "Sashes of the Wretched",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Scepter of the Three",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "Scorn of the Earth",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Scoundrel's Kiss",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Scoundrel's Leathers",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Scourge of Duriel",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Sea Lord's Fine Gloves",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Seal of the Ophanim",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Seal of the Second Trumpet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Seed of Horazon",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Sepazontec",
+    "mythic": false,
+    "slot": "quarterstaff"
+  },
+  {
+    "name": "Shanar's Resonance",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Shard of Verathiel",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Shroud of Khanduras",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Shrouded Gift",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Sidhe Bindings",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Signet of Pelghain",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Sire of Sin",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Skyhunter",
+    "mythic": false,
+    "slot": "bow"
+  },
+  {
+    "name": "Sliver of Hate",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Snake Glaive",
+    "mythic": false,
+    "slot": "glaive"
+  },
+  {
+    "name": "Soulbrand",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Spine of Tathamet",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Squirt's Blouse",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Staff of Endless Rage",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Staff of Lam Esen",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Staff of Zerae",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Starfall Coronet",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Stone of Jordan",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Stone of Vehemen",
+    "mythic": false,
+    "slot": "totem"
+  },
+  {
+    "name": "Storm's Companion",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Strides of War",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Strike of Stormhorn",
+    "mythic": false,
+    "slot": "focus"
+  },
+  {
+    "name": "Sunbird's Gorget",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Sunbrand",
+    "mythic": false,
+    "slot": "mace"
+  },
+  {
+    "name": "Sundered Night",
+    "mythic": false,
+    "slot": "axe2h"
+  },
+  {
+    "name": "Sunstained\u00a0War-Crozier",
+    "mythic": false,
+    "slot": "quarterstaff"
+  },
+  {
+    "name": "Supplication",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "Tal Rasha's Iridescent Loop",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Tassets of the Dawning Sky",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Temerity",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Tempest Roar",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "The Basilisk",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "The Blade of Sight Aflame",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "The Butcher's Cleaver",
+    "mythic": false,
+    "slot": "axe"
+  },
+  {
+    "name": "The Eightfold Idol",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "The Fecund Seal",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "The Furnace",
+    "mythic": false,
+    "slot": "mace2h"
+  },
+  {
+    "name": "The Gloom Ward",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "The Hand of Naz",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "The Hemat Stone",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "The Maestro",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "The Mortacrux",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "The Oculus",
+    "mythic": false,
+    "slot": "wand"
+  },
+  {
+    "name": "The Open Eye of Gorgorra",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "The Relentless Heart",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "The Third Blade",
+    "mythic": false,
+    "slot": "sword"
+  },
+  {
+    "name": "The Umbracrux",
+    "mythic": false,
+    "slot": "dagger"
+  },
+  {
+    "name": "The Undercrown",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "The Unmaker",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Thousand-Eye Reaver",
+    "mythic": false,
+    "slot": "axe"
+  },
+  {
+    "name": "Thrice-Woven Nightmare",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Thundergod's Blessing",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Tibault's Will",
+    "mythic": false,
+    "slot": "pants"
+  },
+  {
+    "name": "Tuskhelm of Joritz the Mighty",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Twin Strikes",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Ugly Bastard Helm",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Unbroken Chain",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Unsung Ascetic's Wraps",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Vasily's Prayer",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Vengeful Sinew",
+    "mythic": false,
+    "slot": "chest"
+  },
+  {
+    "name": "Vision of the Firestorm",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Vox Omnium",
+    "mythic": false,
+    "slot": "staff"
+  },
+  {
+    "name": "Ward of the White Dove",
+    "mythic": false,
+    "slot": "shield"
+  },
+  {
+    "name": "Waxing Gibbous",
+    "mythic": false,
+    "slot": "axe"
+  },
+  {
+    "name": "Wendigo Brand",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Widow's Web",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Wildheart Hunger",
+    "mythic": false,
+    "slot": "boots"
+  },
+  {
+    "name": "Will of Rathma",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Will of Stone",
+    "mythic": false,
+    "slot": "helm"
+  },
+  {
+    "name": "Wilted Potential",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "Windforce",
+    "mythic": false,
+    "slot": "bow"
+  },
+  {
+    "name": "Word of Hakan",
+    "mythic": false,
+    "slot": "amulet"
+  },
+  {
+    "name": "Wound Drinker",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Wreath of Auric Laurel",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Writhing Band of Trickery",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Wushe Nak Pa",
+    "mythic": false,
+    "slot": "glaive"
+  },
+  {
+    "name": "Wyrdskin",
+    "mythic": false,
+    "slot": "gloves"
+  },
+  {
+    "name": "X'Fal's Corroded Signet",
+    "mythic": false,
+    "slot": "ring"
+  },
+  {
+    "name": "Yen's Blessing",
+    "mythic": false,
+    "slot": "boots"
+  }
+]

@@ -1,4 +1,5 @@
 import type { ConditionKind, Rarity, Visibility } from "./types";
+import maxrollUniques from "./maxroll-uniques.json";
 
 export const VISIBILITY_LABEL: Record<Visibility, string> = {
   show: "Show",
@@ -127,56 +128,9 @@ export const AFFIXES = [
   { id: "max_resource", label: "Maximum Resource" },
 ] as const;
 
-export const UNIQUES = [
-  { name: "Harlequin Crest", mythic: true, slot: "helm" },
-  { name: "Shroud of False Death", mythic: true, slot: "chest" },
-  { name: "Heir of Perdition", mythic: true, slot: "helm" },
-  { name: "Tyrael's Might", mythic: true, slot: "chest" },
-  { name: "Ring of Starless Skies", mythic: true, slot: "ring" },
-  { name: "Andariel's Visage", mythic: true, slot: "helm" },
-  { name: "Doombringer", mythic: true, slot: "sword" },
-  { name: "The Grandfather", mythic: true, slot: "sword2h" },
-  { name: "Melted Heart of Selig", mythic: true, slot: "amulet" },
-  { name: "Nesekem the Herald", mythic: true, slot: "glaive" },
-  { name: "Ahavarion, Spear of Lycander", mythic: true, slot: "staff" },
-  { name: "The Butcher's Cleaver", mythic: false, slot: "axe" },
-  { name: "Fists of Fate", mythic: false, slot: "gloves" },
-  { name: "Tibault's Will", mythic: false, slot: "pants" },
-  { name: "Yen's Blessing", mythic: false, slot: "boots" },
-  { name: "Penitent Greaves", mythic: false, slot: "boots" },
-  { name: "Tempest Roar", mythic: false, slot: "helm" },
-  { name: "Insatiable Fury", mythic: false, slot: "chest" },
-  { name: "Deathless Visage", mythic: false, slot: "helm" },
-  { name: "Blood Moon Breeches", mythic: false, slot: "pants" },
-  { name: "Cowl of the Nameless", mythic: false, slot: "helm" },
-  { name: "Grasp of Shadow", mythic: false, slot: "gloves" },
-  { name: "Asheara's Khanjar", mythic: false, slot: "dagger" },
-  { name: "Raiment of the Infinite", mythic: false, slot: "chest" },
-  { name: "Esadora's Overflowing Cameo", mythic: false, slot: "amulet" },
-  { name: "Blue Rose", mythic: false, slot: "ring" },
-  { name: "Paingorger's Gauntlets", mythic: false, slot: "gloves" },
-  { name: "Godslayer Crown", mythic: false, slot: "helm" },
-  { name: "Razorplate", mythic: false, slot: "chest" },
-  { name: "Frostburn", mythic: false, slot: "gloves" },
-  { name: "Flickerstep", mythic: false, slot: "boots" },
-  { name: "Banished Lord's Talisman", mythic: false, slot: "amulet" },
-  { name: "Lidless Wall", mythic: false, slot: "shield" },
-  { name: "Mother's Embrace", mythic: false, slot: "ring" },
-  { name: "Condemnation", mythic: false, slot: "dagger" },
-  { name: "Skyhunter", mythic: false, slot: "bow" },
-  { name: "The Unbroken Chain", mythic: false, slot: "pants" },
-  { name: "Tassets of the Dawning Sky", mythic: false, slot: "pants" },
-  { name: "Soulbrand", mythic: false, slot: "chest" },
-  { name: "Ring of the Sacrilegious Soul", mythic: false, slot: "ring" },
-  { name: "Greatstaff of the Crone", mythic: false, slot: "staff" },
-  { name: "Airidah's Inexorable Will", mythic: false, slot: "ring" },
-  { name: "Hunter's Zenith", mythic: false, slot: "ring" },
-  { name: "Waxing Gibbous", mythic: false, slot: "axe" },
-  { name: "Storm's Companion", mythic: false, slot: "pants" },
-  { name: "Ugly Bastard Helm", mythic: false, slot: "helm" },
-  { name: "Locran's Talisman", mythic: false, slot: "amulet" },
-  { name: "Endurant Faith", mythic: false, slot: "gloves" },
-] as const;
+export type UniqueDef = { name: string; mythic: boolean; slot: string };
+
+export const UNIQUES: UniqueDef[] = maxrollUniques;
 
 export const TALISMAN_SETS = [
   { id: "nilfur", label: "Nilfur's Narrow Eye" },

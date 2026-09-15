@@ -14,13 +14,13 @@ export const Route = createFileRoute("/api/d4/catalog")({
       GET: async () => {
         return Response.json({
           source: {
-            data: "DiabloTools/d4data + community unique lists (Maxroll, d4builds)",
-            art: "Lothrik/diablo4-build-calc Sanctuary stills; local slot/unique tiles",
+            data: "Maxroll d4-tools game dump v3.2.1, cached locally",
+            art: "Maxroll inventory portraits mirrored to /images/d4/maxroll — never hotlinked",
           },
           images: {
             ground: [GROUND_BG, GROUND_BG_ALT, "/images/d4/ground/cathedral.jpg"],
-            slots: `/images/d4/slots/{slot}.svg`,
-            uniques: `/images/d4/uniques/{slug}.svg`,
+            slots: "/images/d4/maxroll/slots/{slot}.png",
+            uniques: "/images/d4/maxroll/uniques/{slug}.png",
           },
           itemTypes: ITEM_TYPE_GROUPS,
           slots: ALL_ITEM_TYPES.map((t) => ({ ...t, icon: slotIcon(t.id) })),

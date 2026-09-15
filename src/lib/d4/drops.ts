@@ -95,7 +95,8 @@ function baseItem(slot: string, rarity: Rarity, rand: () => number, i: number): 
 }
 
 function uniqueItem(i: number, rand: () => number): DropItem {
-  const u = pick(UNIQUES, rand);
+  const pool = UNIQUES.filter((u) => u.slot !== "charm" && u.slot !== "seal");
+  const u = pick(pool.length ? pool : UNIQUES, rand);
   const mythic = Boolean(u.mythic);
   const lore = UNIQUE_LORE[u.name];
   const affixes = lore?.affixes ?? pickN(AFFIXES, 4, rand).map((a) => a.id);

@@ -15,6 +15,7 @@ import { Route as ApiD4DropsRouteImport } from './routes/api/d4/drops'
 import { Route as ApiD4EvaluateRouteImport } from './routes/api/d4/evaluate'
 import { Route as ApiD4ImagesRouteImport } from './routes/api/d4/images'
 import { Route as ApiD4ItemsRouteImport } from './routes/api/d4/items'
+import { Route as ApiD4MaxrollRouteImport } from './routes/api/d4/maxroll'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -46,6 +47,11 @@ const ApiD4ItemsRoute = ApiD4ItemsRouteImport.update({
   path: '/api/d4/items',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiD4MaxrollRoute = ApiD4MaxrollRouteImport.update({
+  id: '/api/d4/maxroll',
+  path: '/api/d4/maxroll',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -54,6 +60,7 @@ export interface FileRoutesByFullPath {
   '/api/d4/evaluate': typeof ApiD4EvaluateRoute
   '/api/d4/images': typeof ApiD4ImagesRoute
   '/api/d4/items': typeof ApiD4ItemsRoute
+  '/api/d4/maxroll': typeof ApiD4MaxrollRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -62,6 +69,7 @@ export interface FileRoutesByTo {
   '/api/d4/evaluate': typeof ApiD4EvaluateRoute
   '/api/d4/images': typeof ApiD4ImagesRoute
   '/api/d4/items': typeof ApiD4ItemsRoute
+  '/api/d4/maxroll': typeof ApiD4MaxrollRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -71,6 +79,7 @@ export interface FileRoutesById {
   '/api/d4/evaluate': typeof ApiD4EvaluateRoute
   '/api/d4/images': typeof ApiD4ImagesRoute
   '/api/d4/items': typeof ApiD4ItemsRoute
+  '/api/d4/maxroll': typeof ApiD4MaxrollRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -81,6 +90,7 @@ export interface FileRouteTypes {
     | '/api/d4/evaluate'
     | '/api/d4/images'
     | '/api/d4/items'
+    | '/api/d4/maxroll'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -89,6 +99,7 @@ export interface FileRouteTypes {
     | '/api/d4/evaluate'
     | '/api/d4/images'
     | '/api/d4/items'
+    | '/api/d4/maxroll'
   id:
     | '__root__'
     | '/'
@@ -97,6 +108,7 @@ export interface FileRouteTypes {
     | '/api/d4/evaluate'
     | '/api/d4/images'
     | '/api/d4/items'
+    | '/api/d4/maxroll'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -106,6 +118,7 @@ export interface RootRouteChildren {
   ApiD4EvaluateRoute: typeof ApiD4EvaluateRoute
   ApiD4ImagesRoute: typeof ApiD4ImagesRoute
   ApiD4ItemsRoute: typeof ApiD4ItemsRoute
+  ApiD4MaxrollRoute: typeof ApiD4MaxrollRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -152,6 +165,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiD4ItemsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/d4/maxroll': {
+      id: '/api/d4/maxroll'
+      path: '/api/d4/maxroll'
+      fullPath: '/api/d4/maxroll'
+      preLoaderRoute: typeof ApiD4MaxrollRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -162,6 +182,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiD4EvaluateRoute: ApiD4EvaluateRoute,
   ApiD4ImagesRoute: ApiD4ImagesRoute,
   ApiD4ItemsRoute: ApiD4ItemsRoute,
+  ApiD4MaxrollRoute: ApiD4MaxrollRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

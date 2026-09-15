@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiD4CatalogRouteImport } from './routes/api/d4/catalog'
+import { Route as ApiD4DropsRouteImport } from './routes/api/d4/drops'
+import { Route as ApiD4EvaluateRouteImport } from './routes/api/d4/evaluate'
+import { Route as ApiD4ImagesRouteImport } from './routes/api/d4/images'
+import { Route as ApiD4ItemsRouteImport } from './routes/api/d4/items'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiD4CatalogRoute = ApiD4CatalogRouteImport.update({
+  id: '/api/d4/catalog',
+  path: '/api/d4/catalog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiD4DropsRoute = ApiD4DropsRouteImport.update({
+  id: '/api/d4/drops',
+  path: '/api/d4/drops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiD4EvaluateRoute = ApiD4EvaluateRouteImport.update({
+  id: '/api/d4/evaluate',
+  path: '/api/d4/evaluate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiD4ImagesRoute = ApiD4ImagesRouteImport.update({
+  id: '/api/d4/images',
+  path: '/api/d4/images',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiD4ItemsRoute = ApiD4ItemsRouteImport.update({
+  id: '/api/d4/items',
+  path: '/api/d4/items',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/api/d4/catalog': typeof ApiD4CatalogRoute
+  '/api/d4/drops': typeof ApiD4DropsRoute
+  '/api/d4/evaluate': typeof ApiD4EvaluateRoute
+  '/api/d4/images': typeof ApiD4ImagesRoute
+  '/api/d4/items': typeof ApiD4ItemsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/api/d4/catalog': typeof ApiD4CatalogRoute
+  '/api/d4/drops': typeof ApiD4DropsRoute
+  '/api/d4/evaluate': typeof ApiD4EvaluateRoute
+  '/api/d4/images': typeof ApiD4ImagesRoute
+  '/api/d4/items': typeof ApiD4ItemsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/api/d4/catalog': typeof ApiD4CatalogRoute
+  '/api/d4/drops': typeof ApiD4DropsRoute
+  '/api/d4/evaluate': typeof ApiD4EvaluateRoute
+  '/api/d4/images': typeof ApiD4ImagesRoute
+  '/api/d4/items': typeof ApiD4ItemsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/api/d4/catalog'
+    | '/api/d4/drops'
+    | '/api/d4/evaluate'
+    | '/api/d4/images'
+    | '/api/d4/items'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/api/d4/catalog'
+    | '/api/d4/drops'
+    | '/api/d4/evaluate'
+    | '/api/d4/images'
+    | '/api/d4/items'
+  id:
+    | '__root__'
+    | '/'
+    | '/api/d4/catalog'
+    | '/api/d4/drops'
+    | '/api/d4/evaluate'
+    | '/api/d4/images'
+    | '/api/d4/items'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ApiD4CatalogRoute: typeof ApiD4CatalogRoute
+  ApiD4DropsRoute: typeof ApiD4DropsRoute
+  ApiD4EvaluateRoute: typeof ApiD4EvaluateRoute
+  ApiD4ImagesRoute: typeof ApiD4ImagesRoute
+  ApiD4ItemsRoute: typeof ApiD4ItemsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/d4/catalog': {
+      id: '/api/d4/catalog'
+      path: '/api/d4/catalog'
+      fullPath: '/api/d4/catalog'
+      preLoaderRoute: typeof ApiD4CatalogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/d4/drops': {
+      id: '/api/d4/drops'
+      path: '/api/d4/drops'
+      fullPath: '/api/d4/drops'
+      preLoaderRoute: typeof ApiD4DropsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/d4/evaluate': {
+      id: '/api/d4/evaluate'
+      path: '/api/d4/evaluate'
+      fullPath: '/api/d4/evaluate'
+      preLoaderRoute: typeof ApiD4EvaluateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/d4/images': {
+      id: '/api/d4/images'
+      path: '/api/d4/images'
+      fullPath: '/api/d4/images'
+      preLoaderRoute: typeof ApiD4ImagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/d4/items': {
+      id: '/api/d4/items'
+      path: '/api/d4/items'
+      fullPath: '/api/d4/items'
+      preLoaderRoute: typeof ApiD4ItemsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ApiD4CatalogRoute: ApiD4CatalogRoute,
+  ApiD4DropsRoute: ApiD4DropsRoute,
+  ApiD4EvaluateRoute: ApiD4EvaluateRoute,
+  ApiD4ImagesRoute: ApiD4ImagesRoute,
+  ApiD4ItemsRoute: ApiD4ItemsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

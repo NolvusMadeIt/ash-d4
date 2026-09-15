@@ -4,6 +4,7 @@ import { newId } from "./catalog";
 export const PIT_FARMER: LootFilter = {
   id: "preset-pit",
   name: "Pit Farmer",
+  scatterSeed: 7741,
   rules: [
     {
       id: newId("r"),
@@ -107,6 +108,7 @@ export const PIT_FARMER: LootFilter = {
 export const STARTER_FILTER: LootFilter = {
   id: "preset-starter",
   name: "New Filter",
+  scatterSeed: 1901,
   rules: [],
 };
 

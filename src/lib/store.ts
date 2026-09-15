@@ -4,7 +4,11 @@ import { decodeFilter, encodeFilter } from "./d4/codec";
 import { PIT_FARMER, STARTER_FILTER } from "./d4/presets";
 import type { Condition, FilterRule, LootFilter } from "./d4/types";
 
-const STORAGE_KEY = "ash-d4-filter-v1";
+const STORAGE_KEY = "ash-d4-filter-v2";
+
+function freshSeed() {
+  return (Math.random() * 0xffffffff) >>> 0 || 1;
+}
 
 type Persisted = {
   filters: LootFilter[];
@@ -41,6 +45,7 @@ type AshState = {
   patchCondition: (index: number, next: Condition) => void;
   removeCondition: (index: number) => void;
   loadPreset: (filter: LootFilter) => void;
+  reshuffleGround: () => void;
 };
 
 function persist(filters: LootFilter[], activeId: string) {
@@ -56,6 +61,7 @@ function cloneFilter(f: LootFilter, name: string): LootFilter {
   return {
     id: newId("f"),
     name,
+    scatterSeed: freshSeed(),
     rules: f.rules.map((r) => ({
       ...r,
       id: newId("r"),
@@ -117,7 +123,10 @@ export const useAsh = create<AshState>((set, get) => ({
         data.filters.some((f) => f.id === data.activeId) ? data.activeId : data.filters[0]!.id;
       const active = data.filters.find((f) => f.id === activeId)!;
       set({
-        filters: data.filters,
+        filters: data.filters.map((f) => ({
+          ...f,
+          scatterSeed: f.scatterSeed || freshSeed(),
+        })),
         activeId,
         selectedRuleId: active.rules[0]?.id ?? null,
       });
@@ -224,7 +233,9 @@ export const useAsh = create<AshState>((set, get) => ({
   addRule() {
     const rule = emptyRule();
     const filters = get().filters.map((f) =>
-      f.id === get().activeId ? { ...f, rules: [...f.rules, rule] } : f,
+      f.id === get().activeId
+        ? { ...f, scatterSeed: freshSeed(), rules: [...f.rules, rule] }
+        : f,
     );
     set({
       filters,
@@ -234,9 +245,14 @@ export const useAsh = create<AshState>((set, get) => ({
     persist(filters, get().activeId);
   },
   patchRule(id, patch) {
+    const nameOnly = Object.keys(patch).length === 1 && "name" in patch;
     const filters = get().filters.map((f) =>
       f.id === get().activeId
-        ? { ...f, rules: f.rules.map((r) => (r.id === id ? { ...r, ...patch } : r)) }
+        ? {
+            ...f,
+            scatterSeed: nameOnly ? f.scatterSeed : freshSeed(),
+            rules: f.rules.map((r) => (r.id === id ? { ...r, ...patch } : r)),
+          }
         : f,
     );
     set({ filters });
@@ -270,14 +286,16 @@ export const useAsh = create<AshState>((set, get) => ({
       const i = f.rules.findIndex((r) => r.id === id);
       const rules = [...f.rules];
       rules.splice(i + 1, 0, copy);
-      return { ...f, rules };
+      return { ...f, scatterSeed: freshSeed(), rules };
     });
     set({ filters, status: "Rule duplicated." });
     persist(filters, get().activeId);
   },
   removeRule(id) {
     const filters = get().filters.map((f) =>
-      f.id === get().activeId ? { ...f, rules: f.rules.filter((r) => r.id !== id) } : f,
+      f.id === get().activeId
+        ? { ...f, scatterSeed: freshSeed(), rules: f.rules.filter((r) => r.id !== id) }
+        : f,
     );
     const next = filters.find((f) => f.id === get().activeId);
     set({
@@ -292,6 +310,7 @@ export const useAsh = create<AshState>((set, get) => ({
       f.id === get().activeId
         ? {
             ...f,
+            scatterSeed: freshSeed(),
             rules: f.rules.map((r) => (r.id === id ? { ...r, enabled: !r.enabled } : r)),
           }
         : f,
@@ -302,7 +321,7 @@ export const useAsh = create<AshState>((set, get) => ({
   enableAll(on) {
     const filters = get().filters.map((f) =>
       f.id === get().activeId
-        ? { ...f, rules: f.rules.map((r) => ({ ...r, enabled: on })) }
+        ? { ...f, scatterSeed: freshSeed(), rules: f.rules.map((r) => ({ ...r, enabled: on })) }
         : f,
     );
     set({ filters });
@@ -316,6 +335,7 @@ export const useAsh = create<AshState>((set, get) => ({
       f.id === get().activeId
         ? {
             ...f,
+            scatterSeed: freshSeed(),
             rules: f.rules.map((r) =>
               r.id === id ? { ...r, conditions: [...r.conditions, cond] } : r,
             ),
@@ -332,6 +352,7 @@ export const useAsh = create<AshState>((set, get) => ({
       f.id === get().activeId
         ? {
             ...f,
+            scatterSeed: freshSeed(),
             rules: f.rules.map((r) => {
               if (r.id !== id) return r;
               const conditions = r.conditions.map((c, i) => (i === index ? next : c));
@@ -350,6 +371,7 @@ export const useAsh = create<AshState>((set, get) => ({
       f.id === get().activeId
         ? {
             ...f,
+            scatterSeed: freshSeed(),
             rules: f.rules.map((r) =>
               r.id === id
                 ? { ...r, conditions: r.conditions.filter((_, i) => i !== index) }
@@ -371,5 +393,12 @@ export const useAsh = create<AshState>((set, get) => ({
       status: `${copy.name} loaded.`,
     });
     persist(filters, copy.id);
+  },
+  reshuffleGround() {
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId ? { ...f, scatterSeed: freshSeed() } : f,
+    );
+    set({ filters, status: "New drop on the ground." });
+    persist(filters, get().activeId);
   },
 }));

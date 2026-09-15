@@ -9,13 +9,12 @@ export function FilterShell() {
 
   return (
     <div className="d4-frame relative flex min-h-dvh flex-col">
-      <div className="d4-pentagram pointer-events-none absolute inset-0" />
-      <header className="relative flex items-center justify-between border-b border-border px-4 py-2">
-        <p className="text-xs tracking-[0.28em] text-gold uppercase">Loot Filter</p>
-        <p className="text-[11px] tracking-[0.32em] text-subtle uppercase">Ash</p>
+      <header className="relative flex items-center justify-between border-b border-border bg-bg/80 px-4 py-2">
+        <p className="font-display text-sm tracking-[0.28em] text-gold uppercase">Loot Filter</p>
+        <p className="font-display text-xs tracking-[0.32em] text-subtle uppercase">Ash</p>
       </header>
       <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col gap-3 overflow-x-hidden p-3 sm:p-4">
-        <div className="grid min-h-0 flex-1 gap-3 lg:grid-cols-2">
+        <div className="grid min-h-0 gap-3 lg:h-[min(24rem,42dvh)] lg:grid-cols-2 lg:overflow-hidden">
           <RuleList />
           <RuleEditor />
         </div>
@@ -31,7 +30,7 @@ export function FilterShell() {
           </button>
         </div>
         <GroundPreview />
-        <p className="text-center text-xs text-muted" role="status">
+        <p className="text-center font-sans text-xs text-muted" role="status">
           {error ? <span className="text-rarity-legendary">{error}</span> : status}
         </p>
       </div>

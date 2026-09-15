@@ -12,7 +12,7 @@ export function RuleEditor() {
 
   if (!rule) {
     return (
-      <section className="d4-panel flex min-h-0 flex-col">
+      <section className="d4-panel flex h-full min-h-0 flex-col overflow-hidden">
         <header className="d4-head-stone flex h-10 items-center justify-center">
           Rule Editor
         </header>
@@ -25,7 +25,7 @@ export function RuleEditor() {
   }
 
   return (
-    <section className="d4-panel flex min-h-0 flex-col">
+    <section className="d4-panel flex h-full min-h-0 flex-col overflow-hidden">
       <header className="d4-head-stone flex h-10 items-center justify-center">
         Rule Editor
       </header>

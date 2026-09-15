@@ -20,7 +20,7 @@ export function RuleList() {
   const count = filter.rules.length;
 
   return (
-    <section className="d4-panel flex min-h-0 flex-col">
+    <section className="d4-panel flex h-full min-h-0 flex-col overflow-hidden">
       <header className="d4-head-gold flex h-10 items-center justify-center">
         Selected Loot Filter
       </header>

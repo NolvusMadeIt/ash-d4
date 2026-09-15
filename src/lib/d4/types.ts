@@ -58,6 +58,18 @@ export type LootFilter = {
   id: string;
   name: string;
   rules: FilterRule[];
+  scatterSeed: number;
+};
+
+export type AffixRoll = {
+  id: string;
+  text: string;
+  greater: boolean;
+};
+
+export type InherentLine = {
+  text: string;
+  indent?: boolean;
 };
 
 export type DropItem = {
@@ -74,4 +86,19 @@ export type DropItem = {
   uniqueName?: string;
   codexUpgrade?: boolean;
   talismanSet?: string;
+};
+
+export type GroundDrop = DropItem & {
+  x: number;
+  y: number;
+  rot: number;
+  icon: string;
+  typeLine: string;
+  inherents: InherentLine[];
+  affixRolls: AffixRoll[];
+  tempers: AffixRoll[];
+  power?: string;
+  flavor?: string;
+  requiredLevel: number;
+  sockets: number;
 };

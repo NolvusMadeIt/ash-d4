@@ -285,7 +285,7 @@ export function decodeFilter(code: string): LootFilter {
     .filter((f) => f.field === 1 && f.bytes)
     .map((f) => decodeRule(f.bytes!));
   if (rules.length === 0) throw new Error("That did not look like a loot filter code.");
-  return { id: newId("f"), name: name || "Imported Filter", rules };
+  return { id: newId("f"), name: name || "Imported Filter", rules, scatterSeed: (Date.now() ^ (rules.length * 9973)) >>> 0 };
 }
 
 export function looksLikeCode(text: string) {

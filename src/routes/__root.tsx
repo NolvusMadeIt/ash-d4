@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Cull";
+const APP_NAME = "Ash";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -11,10 +11,10 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: APP_NAME },
-      { name: "theme-color", content: "#0a0a0b" },
+      { name: "theme-color", content: "#070605" },
       {
         name: "description",
-        content: "Start from a NeverSink Path of Exile 2 filter, import a build, then hide or show items.",
+        content: "Diablo 4 loot filter editor. Build, import, and export filters with the in-game layout.",
       },
     ],
     links: [

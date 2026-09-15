@@ -1,7 +1,6 @@
 {
-  "title": "Cull",
-  "type": "website",
+  "title": "Ash",
   "card": "custom",
-  "color": "0a0a0b",
-  "description": "Start from a NeverSink Path of Exile 2 filter, import a build, then hide or show items."
+  "color": "070605",
+  "description": "Diablo 4 loot filter editor"
 }

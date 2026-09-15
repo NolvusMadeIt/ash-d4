@@ -10,43 +10,33 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiPoeArtRouteImport } from './routes/api/poe/art'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPoeArtRoute = ApiPoeArtRouteImport.update({
-  id: '/api/poe/art',
-  path: '/api/poe/art',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/api/poe/art': typeof ApiPoeArtRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/api/poe/art': typeof ApiPoeArtRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/api/poe/art': typeof ApiPoeArtRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/poe/art'
+  fullPaths: '/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/poe/art'
-  id: '__root__' | '/' | '/api/poe/art'
+  to: '/'
+  id: '__root__' | '/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ApiPoeArtRoute: typeof ApiPoeArtRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,19 +48,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/poe/art': {
-      id: '/api/poe/art'
-      path: '/api/poe/art'
-      fullPath: '/api/poe/art'
-      preLoaderRoute: typeof ApiPoeArtRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ApiPoeArtRoute: ApiPoeArtRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

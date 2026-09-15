@@ -1,397 +1,375 @@
 import { create } from "zustand";
-import {
-  classFromBase,
-  indexCatalog,
-  loadBakedCatalog,
-  type ScoutItem,
-} from "./poe/catalog";
-import { indexBaseIcons, loadBaseIcons, type BaseIconMap } from "./poe/base-icons";
-import { DEMO_ITEMS } from "./poe/demo-items";
-import {
-  DEFAULT_STYLE,
-  GEM_STYLE,
-  matchingRule,
-  newRuleId,
-  RARE_STYLE,
-  UNIQUE_STYLE,
-  type FilterRule,
-} from "./poe/filter";
-import { NEVER_SINK_TEMPLATES, type NeverSinkId } from "./poe/neversink";
-import { decodeHtmlEntities } from "./poe/decode";
-import { parseItem, type ItemRarity, type ParsedItem } from "./poe/parse-item";
-import {
-  enrichPieces,
-  parseBuildSource,
-  type BuildPiece,
-} from "./poe/pob";
-import { loadNeverSinkFilter, refreshSources } from "./poe/sync";
+import { newId } from "./d4/catalog";
+import { decodeFilter, encodeFilter } from "./d4/codec";
+import { PIT_FARMER, STARTER_FILTER } from "./d4/presets";
+import type { Condition, FilterRule, LootFilter } from "./d4/types";
 
-const STORAGE_KEY = "cull-filter-v2";
+const STORAGE_KEY = "ash-d4-filter-v1";
 
 type Persisted = {
-  rules: FilterRule[];
-  imported: string | null;
-  importedName: string | null;
-  templateId: NeverSinkId | null;
-  buildName: string | null;
-  buildPieces: BuildPiece[];
+  filters: LootFilter[];
+  activeId: string;
 };
 
-type CullState = {
-  item: ParsedItem | null;
-  error: string | null;
-  rules: FilterRule[];
-  imported: string | null;
-  importedName: string | null;
-  templateId: NeverSinkId | null;
-  templateLoading: boolean;
-  buildName: string | null;
-  buildPieces: BuildPiece[];
-  catalog: Map<string, ScoutItem>;
-  baseIcons: BaseIconMap;
-  league: string | null;
+type AshState = {
+  filters: LootFilter[];
+  activeId: string;
+  selectedRuleId: string | null;
   status: string;
+  error: string | null;
+  modal: "create" | "rename" | null;
   hydrate: () => void;
-  loadCatalog: () => Promise<void>;
-  ingestText: (text: string, source?: string) => boolean;
-  setAction: (action: "Show" | "Hide", target?: ParsedItem) => void;
-  patchRule: (patch: Partial<FilterRule>) => void;
-  toggleRarity: (rarity: ItemRarity) => void;
+  active: () => LootFilter;
+  selectedRule: () => FilterRule | null;
+  setActive: (id: string) => void;
+  selectRule: (id: string | null) => void;
+  openModal: (m: "create" | "rename" | null) => void;
+  createFilter: (name: string) => void;
+  importCode: (code: string, name?: string) => boolean;
+  exportActive: () => string;
+  renameActive: (name: string) => void;
+  duplicateActive: () => void;
+  deleteActive: () => void;
+  addRule: () => void;
+  patchRule: (id: string, patch: Partial<FilterRule>) => void;
+  moveRule: (id: string, dir: -1 | 1) => void;
+  duplicateRule: (id: string) => void;
   removeRule: (id: string) => void;
-  setImported: (text: string | null, name: string | null) => void;
-  loadTemplate: (id: NeverSinkId) => Promise<void>;
-  importBuild: (source: string, name: string) => Promise<void>;
-  selectPiece: (id: string) => void;
-  clearBuild: () => void;
-  clearItem: () => void;
+  toggleRule: (id: string) => void;
+  enableAll: (on: boolean) => void;
+  addCondition: (kind: Condition["kind"]) => void;
+  patchCondition: (index: number, next: Condition) => void;
+  removeCondition: (index: number) => void;
+  loadPreset: (filter: LootFilter) => void;
 };
 
-function persist(
-  state: Pick<
-    CullState,
-    "rules" | "imported" | "importedName" | "templateId" | "buildName" | "buildPieces"
-  >,
-) {
+function persist(filters: LootFilter[], activeId: string) {
   try {
-    const data: Persisted = {
-      rules: state.rules,
-      imported: state.imported,
-      importedName: state.importedName,
-      templateId: state.templateId,
-      buildName: state.buildName,
-      buildPieces: state.buildPieces,
-    };
+    const data: Persisted = { filters, activeId };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch {
-    /* ignore quota */
+    /* ignore */
   }
 }
 
-function scrubItem(item: ParsedItem): ParsedItem {
+function cloneFilter(f: LootFilter, name: string): LootFilter {
   return {
-    ...item,
-    name: decodeHtmlEntities(item.name),
-    baseType: decodeHtmlEntities(item.baseType),
-    className: decodeHtmlEntities(item.className),
-    raw: decodeHtmlEntities(item.raw),
+    id: newId("f"),
+    name,
+    rules: f.rules.map((r) => ({
+      ...r,
+      id: newId("r"),
+      conditions: r.conditions.map((c) => ({ ...c })),
+    })),
   };
 }
 
-function scrubRule(rule: FilterRule): FilterRule {
+function emptyRule(): FilterRule {
   return {
-    ...rule,
-    className: decodeHtmlEntities(rule.className),
-    baseType: decodeHtmlEntities(rule.baseType),
-    uniqueName: rule.uniqueName ? decodeHtmlEntities(rule.uniqueName) : rule.uniqueName,
+    id: newId("r"),
+    name: "New Rule",
+    enabled: true,
+    visibility: "show",
+    color: "#f08a2a",
+    conditions: [],
   };
 }
 
-function defaultRarities(item: ParsedItem): ItemRarity[] {
-  if (item.rarity === "Currency" || item.rarity === "Gem") return [];
-  if (item.rarity === "Normal" || item.rarity === "Magic") {
-    return ["Normal", "Magic"];
+function defaultCondition(kind: Condition["kind"]): Condition {
+  switch (kind) {
+    case "itemPower":
+      return { kind, min: 0, max: 1000 };
+    case "rarity":
+      return { kind, rarities: ["legendary"] };
+    case "properties":
+      return { kind, ancestral: true, mythic: false };
+    case "codex":
+      return { kind, enabled: true };
+    case "greaterAffix":
+      return { kind, atLeast: 1, compare: "atLeast" };
+    case "itemType":
+      return { kind, types: [], allClasses: true };
+    case "requiredAffixes":
+      return { kind, affixes: [], atLeast: 1 };
+    case "optionalAffixes":
+      return { kind, affixes: [], atLeast: 1 };
+    case "unique":
+      return { kind, names: [] };
+    case "talismanSet":
+      return { kind, sets: [] };
   }
-  return [item.rarity];
 }
 
-function styleFor(kind: BuildPiece["kind"]) {
-  if (kind === "unique") return UNIQUE_STYLE;
-  if (kind === "gem") return GEM_STYLE;
-  if (kind === "rare") return RARE_STYLE;
-  return DEFAULT_STYLE;
-}
-
-function upsertForItem(
-  rules: FilterRule[],
-  item: ParsedItem,
-  patch: Partial<FilterRule>,
-): FilterRule[] {
-  const existing = matchingRule(rules, item);
-  if (existing) {
-    const updated = { ...existing, ...patch };
-    return [updated, ...rules.filter((r) => r.id !== existing.id)];
-  }
-  const created: FilterRule = {
-    id: newRuleId(),
-    action: "Hide",
-    className: item.className,
-    baseType: item.baseType,
-    rarities: defaultRarities(item),
-    disableDropSound: true,
-    uniqueName: item.rarity === "Unique" ? decodeHtmlEntities(item.name) : undefined,
-    source: "manual",
-    ...DEFAULT_STYLE,
-    ...patch,
-  };
-  return [created, ...rules];
-}
-
-function rulesFromBuild(pieces: BuildPiece[], existing: FilterRule[]): FilterRule[] {
-  const kept = existing.filter((r) => r.source !== "build");
-  const created: FilterRule[] = [];
-  for (const p of pieces) {
-    if (p.kind === "currency" || p.kind === "other") continue;
-    const rarities: ItemRarity[] =
-      p.kind === "unique"
-        ? ["Unique"]
-        : p.kind === "gem"
-          ? []
-          : defaultRarities(p.item);
-    created.push({
-      id: newRuleId(),
-      action: "Show",
-      className: decodeHtmlEntities(p.item.className),
-      baseType: decodeHtmlEntities(p.item.baseType),
-      rarities,
-      disableDropSound: false,
-      uniqueName: p.kind === "unique" ? decodeHtmlEntities(p.item.name) : undefined,
-      source: "build",
-      slot: p.slot,
-      ...styleFor(p.kind),
-    });
-  }
-  return [...created, ...kept];
-}
-
-export const useCull = create<CullState>((set, get) => ({
-  item: parseItem(DEMO_ITEMS[0].raw),
+export const useAsh = create<AshState>((set, get) => ({
+  filters: [structuredClone(PIT_FARMER)],
+  activeId: PIT_FARMER.id,
+  selectedRuleId: PIT_FARMER.rules[0]?.id ?? null,
+  status: "Rules apply top to bottom. An item must meet every condition on a rule.",
   error: null,
-  rules: [],
-  imported: null,
-  importedName: null,
-  templateId: null,
-  templateLoading: false,
-  buildName: null,
-  buildPieces: [],
-  catalog: indexCatalog([]),
-  baseIcons: new Map(),
-  league: null,
-  status: "Pick a NeverSink template, then import a build — or paste an item copy.",
+  modal: null,
   hydrate() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return;
       const data = JSON.parse(raw) as Persisted;
-      const rules = Array.isArray(data.rules) ? data.rules.map(scrubRule) : [];
-      const buildPieces = Array.isArray(data.buildPieces)
-        ? data.buildPieces.map((p) => ({ ...p, item: scrubItem(p.item) }))
-        : [];
+      if (!Array.isArray(data.filters) || data.filters.length === 0) return;
+      const activeId =
+        data.filters.some((f) => f.id === data.activeId) ? data.activeId : data.filters[0]!.id;
+      const active = data.filters.find((f) => f.id === activeId)!;
       set({
-        rules,
-        imported: data.imported ?? null,
-        importedName: data.importedName ?? null,
-        templateId: data.templateId ?? null,
-        buildName: data.buildName ?? null,
-        buildPieces,
-      });
-      persist({
-        rules,
-        imported: data.imported ?? null,
-        importedName: data.importedName ?? null,
-        templateId: data.templateId ?? null,
-        buildName: data.buildName ?? null,
-        buildPieces,
+        filters: data.filters,
+        activeId,
+        selectedRuleId: active.rules[0]?.id ?? null,
       });
     } catch {
       /* ignore */
     }
   },
-  async loadCatalog() {
-    const [baked, bases] = await Promise.all([loadBakedCatalog(), loadBaseIcons()]);
-    const catalog = indexCatalog(baked.items);
-    set({
-      catalog,
-      baseIcons: bases,
-      league: baked.league,
-      buildPieces: enrichPieces(get().buildPieces, catalog, bases),
-      status: "Checking sources for updates…",
-    });
-    try {
-      const live = await refreshSources();
-      if (live.catalog.items.length > 0) {
-        const next = indexCatalog(live.catalog.items);
-        const icons =
-          live.baseCount > 0 ? indexBaseIcons(live.baseIcons) : get().baseIcons;
-        const pieces = enrichPieces(get().buildPieces, next, icons);
-        set({
-          catalog: next,
-          baseIcons: icons,
-          league: live.league,
-          buildPieces: pieces,
-          status: `Sources checked · ${live.league} · ${live.itemCount} items`,
-        });
-      } else {
-        set({
-          status: `Using packed data · ${get().league ?? "offline"}`,
-        });
-      }
-    } catch {
-      set({
-        status: `Using packed data · ${get().league ?? "offline"}`,
-      });
-    }
+  active() {
+    return get().filters.find((f) => f.id === get().activeId) ?? get().filters[0]!;
   },
-  ingestText(text, source = "clipboard") {
-    const parsed = parseItem(text);
-    if (!parsed) {
+  selectedRule() {
+    const f = get().active();
+    return f.rules.find((r) => r.id === get().selectedRuleId) ?? null;
+  },
+  setActive(id) {
+    const f = get().filters.find((x) => x.id === id);
+    if (!f) return;
+    set({
+      activeId: id,
+      selectedRuleId: f.rules[0]?.id ?? null,
+      error: null,
+      status: `${f.name} selected.`,
+    });
+    persist(get().filters, id);
+  },
+  selectRule(id) {
+    set({ selectedRuleId: id });
+  },
+  openModal(m) {
+    set({ modal: m, error: null });
+  },
+  createFilter(name) {
+    const f = cloneFilter(STARTER_FILTER, name.trim() || "New Filter");
+    const filters = [...get().filters, f];
+    set({
+      filters,
+      activeId: f.id,
+      selectedRuleId: null,
+      modal: null,
+      status: `${f.name} created.`,
+    });
+    persist(filters, f.id);
+  },
+  importCode(code, name) {
+    try {
+      const f = decodeFilter(code);
+      if (name?.trim()) f.name = name.trim();
+      const filters = [...get().filters, f];
       set({
-        error: "That was not a Path of Exile item copy.",
-        status: "Need a Ctrl+C item dump.",
+        filters,
+        activeId: f.id,
+        selectedRuleId: f.rules[0]?.id ?? null,
+        modal: null,
+        error: null,
+        status: `Imported ${f.name} · ${f.rules.length} rules.`,
+      });
+      persist(filters, f.id);
+      return true;
+    } catch (err) {
+      set({
+        error: err instanceof Error ? err.message : "Invalid loot filter code.",
+        status: "Could not read that code.",
       });
       return false;
     }
-    const hit = get().catalog.get(parsed.name.toLowerCase());
-    const item = hit
-      ? {
-          ...parsed,
-          baseType: hit.base || parsed.baseType,
-          className:
-            parsed.className === "Unknown"
-              ? classFromBase(hit.base || parsed.baseType, hit.category)
-              : parsed.className,
-        }
-      : parsed;
+  },
+  exportActive() {
+    const code = encodeFilter(get().active());
+    set({ status: "Filter code copied. Paste it in-game under New Filter → Import." });
+    return code;
+  },
+  renameActive(name) {
+    const n = name.trim();
+    if (!n) return;
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId ? { ...f, name: n } : f,
+    );
+    set({ filters, modal: null, status: `Renamed to ${n}.` });
+    persist(filters, get().activeId);
+  },
+  duplicateActive() {
+    const copy = cloneFilter(get().active(), `${get().active().name} Copy`);
+    const filters = [...get().filters, copy];
     set({
-      item,
-      error: null,
-      status: `Read ${item.name} from ${source}.`,
+      filters,
+      activeId: copy.id,
+      selectedRuleId: copy.rules[0]?.id ?? null,
+      status: `Duplicated as ${copy.name}.`,
     });
-    return true;
+    persist(filters, copy.id);
   },
-  setAction(action, target) {
-    const item = target ?? get().item;
-    if (!item) return;
-    const { rules } = get();
-    const next = upsertForItem(rules, item, { action, source: "manual" });
+  deleteActive() {
+    let filters = get().filters.filter((f) => f.id !== get().activeId);
+    if (filters.length === 0) filters = [cloneFilter(STARTER_FILTER, "New Filter")];
+    const activeId = filters[0]!.id;
     set({
-      item,
-      rules: next,
-      error: null,
-      status:
-        action === "Hide"
-          ? `Hidden ${item.baseType} in every zone. Export the filter, then reload it in-game.`
-          : `Showing ${item.baseType} in every zone. Export and reload the filter.`,
+      filters,
+      activeId,
+      selectedRuleId: filters[0]!.rules[0]?.id ?? null,
+      status: "Filter deleted.",
     });
-    persist({ ...get(), rules: next });
+    persist(filters, activeId);
   },
-  patchRule(patch) {
-    const { item, rules } = get();
-    if (!item) return;
-    const next = upsertForItem(rules, item, patch);
-    set({ rules: next });
-    persist({ ...get(), rules: next });
+  addRule() {
+    const rule = emptyRule();
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId ? { ...f, rules: [...f.rules, rule] } : f,
+    );
+    set({
+      filters,
+      selectedRuleId: rule.id,
+      status: "Rule added. Conditions are AND — every one must match.",
+    });
+    persist(filters, get().activeId);
   },
-  toggleRarity(rarity) {
-    const { item, rules } = get();
-    if (!item) return;
-    const current = matchingRule(rules, item);
-    const list = current?.rarities ?? [item.rarity];
-    const rarities = list.includes(rarity)
-      ? list.filter((r) => r !== rarity)
-      : [...list, rarity];
-    const next = upsertForItem(rules, item, { rarities });
-    set({ rules: next });
-    persist({ ...get(), rules: next });
+  patchRule(id, patch) {
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? { ...f, rules: f.rules.map((r) => (r.id === id ? { ...r, ...patch } : r)) }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  moveRule(id, dir) {
+    const filters = get().filters.map((f) => {
+      if (f.id !== get().activeId) return f;
+      const rules = [...f.rules];
+      const i = rules.findIndex((r) => r.id === id);
+      const j = i + dir;
+      if (i < 0 || j < 0 || j >= rules.length) return f;
+      const [row] = rules.splice(i, 1);
+      rules.splice(j, 0, row!);
+      return { ...f, rules };
+    });
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  duplicateRule(id) {
+    const filters = get().filters.map((f) => {
+      if (f.id !== get().activeId) return f;
+      const src = f.rules.find((r) => r.id === id);
+      if (!src) return f;
+      const copy: FilterRule = {
+        ...src,
+        id: newId("r"),
+        name: `${src.name} Copy`,
+        conditions: src.conditions.map((c) => ({ ...c })),
+      };
+      const i = f.rules.findIndex((r) => r.id === id);
+      const rules = [...f.rules];
+      rules.splice(i + 1, 0, copy);
+      return { ...f, rules };
+    });
+    set({ filters, status: "Rule duplicated." });
+    persist(filters, get().activeId);
   },
   removeRule(id) {
-    const rules = get().rules.filter((r) => r.id !== id);
-    set({ rules });
-    persist({ ...get(), rules });
-  },
-  setImported(text, name) {
-    set({ imported: text, importedName: name, templateId: null });
-    persist({ ...get(), imported: text, importedName: name, templateId: null });
-  },
-  async loadTemplate(id) {
-    set({ templateLoading: true, error: null, status: `Loading ${id}…` });
-    try {
-      const text = await loadNeverSinkFilter({ data: id });
-      const meta = NEVER_SINK_TEMPLATES.find((t) => t.id === id);
-      set({
-        imported: text,
-        importedName: meta?.file ?? id,
-        templateId: id,
-        templateLoading: false,
-        status: `${meta?.label ?? id} loaded. Cull rules inject above NeverSink.`,
-      });
-      persist({ ...get(), imported: text, importedName: meta?.file ?? id, templateId: id });
-    } catch (err) {
-      set({
-        templateLoading: false,
-        error: err instanceof Error ? err.message : "NeverSink failed to load",
-        status: "Could not fetch that template.",
-      });
-    }
-  },
-  async importBuild(source, name) {
-    try {
-      const parsed = await parseBuildSource(source);
-      if (parsed.length === 0) {
-        set({
-          error: "No items found in that build.",
-          status: "Need a .build file or Path of Building code.",
-        });
-        return;
-      }
-      const pieces = enrichPieces(parsed, get().catalog, get().baseIcons);
-      const rules = rulesFromBuild(pieces, get().rules);
-      const first = pieces[0];
-      set({
-        buildPieces: pieces,
-        buildName: name,
-        rules,
-        item: first?.item ?? get().item,
-        error: null,
-        status: `Detected ${pieces.length} items from ${name}. Filter now shows those bases.`,
-      });
-      persist({ ...get(), rules, buildPieces: pieces, buildName: name });
-    } catch (err) {
-      set({
-        error: err instanceof Error ? err.message : "Could not read that build.",
-        status: "Paste Path of Building code, or drop a .build file.",
-      });
-    }
-  },
-  selectPiece(id) {
-    const piece = get().buildPieces.find((p) => p.id === id);
-    if (!piece) return;
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId ? { ...f, rules: f.rules.filter((r) => r.id !== id) } : f,
+    );
+    const next = filters.find((f) => f.id === get().activeId);
     set({
-      item: piece.item,
-      error: null,
-      status: `Editing ${piece.item.name}.`,
+      filters,
+      selectedRuleId:
+        get().selectedRuleId === id ? (next?.rules[0]?.id ?? null) : get().selectedRuleId,
     });
+    persist(filters, get().activeId);
   },
-  clearBuild() {
-    const rules = get().rules.filter((r) => r.source !== "build");
+  toggleRule(id) {
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? {
+            ...f,
+            rules: f.rules.map((r) => (r.id === id ? { ...r, enabled: !r.enabled } : r)),
+          }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  enableAll(on) {
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? { ...f, rules: f.rules.map((r) => ({ ...r, enabled: on })) }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  addCondition(kind) {
+    const id = get().selectedRuleId;
+    if (!id) return;
+    const cond = defaultCondition(kind);
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? {
+            ...f,
+            rules: f.rules.map((r) =>
+              r.id === id ? { ...r, conditions: [...r.conditions, cond] } : r,
+            ),
+          }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  patchCondition(index, next) {
+    const id = get().selectedRuleId;
+    if (!id) return;
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? {
+            ...f,
+            rules: f.rules.map((r) => {
+              if (r.id !== id) return r;
+              const conditions = r.conditions.map((c, i) => (i === index ? next : c));
+              return { ...r, conditions };
+            }),
+          }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  removeCondition(index) {
+    const id = get().selectedRuleId;
+    if (!id) return;
+    const filters = get().filters.map((f) =>
+      f.id === get().activeId
+        ? {
+            ...f,
+            rules: f.rules.map((r) =>
+              r.id === id
+                ? { ...r, conditions: r.conditions.filter((_, i) => i !== index) }
+                : r,
+            ),
+          }
+        : f,
+    );
+    set({ filters });
+    persist(filters, get().activeId);
+  },
+  loadPreset(filter) {
+    const copy = cloneFilter(filter, filter.name);
+    const filters = [...get().filters, copy];
     set({
-      buildPieces: [],
-      buildName: null,
-      rules,
-      status: "Build cleared. Template and manual rules remain.",
+      filters,
+      activeId: copy.id,
+      selectedRuleId: copy.rules[0]?.id ?? null,
+      status: `${copy.name} loaded.`,
     });
-    persist({ ...get(), rules, buildPieces: [], buildName: null });
-  },
-  clearItem() {
-    set({ item: null, error: null, status: "Waiting for an item copy." });
+    persist(filters, copy.id);
   },
 }));

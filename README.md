@@ -1,21 +1,15 @@
-# Cull
+# Ash
 
-Path of Exile 2 loot filter overlay. Start from a NeverSink template, import a Path of Building, then hide or show items by their picture.
+Diablo 4 loot filter editor. Same two-panel layout as Lord of Hatred: rules on the left, conditions on the right, then a ground preview so you can see what still drops.
 
 ## What it does
 
-- Loads NeverSink filter templates (soft through uber-plus-strict)
-- Imports `.build` files or Path of Building paste codes
-- Shows each piece as its **base type** art (a Bloodstone Amulet looks like a Bloodstone Amulet)
-- Writes **global** Hide/Show rules with no AreaLevel, so campaign floors actually go dark
-- Filter conditions: armour / evasion / energy shield, affixes, item level, quality
-- Alert sounds: game 1–16, NeverSink pack, or your own file
-- Hover tooltips styled like the in-game gold-header card
-- On launch, checks item data, base art, and templates for updates. Pictures are served through Cull’s own art API — the browser never hotlinks third-party files.
-
-## Stack
-
-TanStack Start, React 19, Tailwind v4, Zustand (localStorage). No account required.
+- Create filters with up to 25 rules (top rule wins)
+- Visibility: Show, Recolor, Hide Text Label, Hide All
+- All 10 in-game condition types: item power, rarity, properties (Ancestral / Mythic), Codex upgrade, greater affixes, item type, required / optional affixes, specific uniques, talisman sets
+- Import a loot-filter code (the string you paste in-game)
+- Export a code to clipboard for **Options → Gameplay → Open Loot Filter → New Filter → Import**
+- Ground preview with in-game-style labels and tooltips
 
 ## Run
 
@@ -24,4 +18,8 @@ npm install
 npm run dev
 ```
 
-Export a `.filter`, drop it in your PoE2 filter folder, and reload the filter in-game.
+## In-game
+
+Only one filter is active at a time. After importing a code, enable the filter in Diablo 4 and toggle it from the Game Menu if you pinned the shortcut.
+
+Cull (Path of Exile 2) lives at https://github.com/NolvusMadeIt/cull

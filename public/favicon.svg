@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Cull">
+  <rect width="32" height="32" rx="6" fill="#0a0a0b"/>
+  <path fill="#c8ccd4" fill-rule="evenodd" d="M11 3a6.2 6.2 0 1 1 0 12.4A6.2 6.2 0 0 1 11 3zm0 3.5a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zM11 16.6a6.2 6.2 0 1 1 0 12.4 6.2 6.2 0 0 1 0-12.4zm0 3.5a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4z"/>
+  <path fill="#c8ccd4" d="M15.6 9.6 29.2 14.4a2 2 0 0 1 0 3.2L15.6 22.4l1.3-3.6L24.8 16l-7.9-2.8z"/>
+  <circle cx="15.2" cy="16" r="2.7" fill="#141418"/>
+  <circle cx="15.2" cy="16" r="1.5" fill="#c4564e"/>
+</svg>

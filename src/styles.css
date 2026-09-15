@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0b;
+  --color-surface: #121214;
+  --color-elevated: #1a1a1e;
+  --color-fg: #f4f4f5;
+  --color-muted: #a1a1aa;
+  --color-subtle: #71717a;
+  --color-border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --color-border-strong: color-mix(in oklab, var(--color-fg) 22%, transparent);
+  --color-accent: #c8ccd4;
+  --color-accent-fg: #0a0a0b;
+  --color-danger: #c4564e;
+  --color-danger-fg: #f4f4f5;
+  --color-ok: #6f9e7a;
+  --color-rarity-normal: #c8c8c8;
+  --color-rarity-magic: #8888ff;
+  --color-rarity-rare: #e8e070;
+  --color-rarity-unique: #af6025;
+  --color-rarity-currency: #aa9e82;
+  --color-rarity-gem: #1ba29b;
+  --color-tooltip: #070709;
+  --color-tip-frame: #8a7344;
+  --color-tip-normal: #c4aa6a;
+
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-panel: 0 18px 50px color-mix(in oklab, #000 45%, transparent);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+}
+
+.item-tip-header {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, currentColor 22%, var(--color-tooltip)),
+    var(--color-tooltip)
+  );
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, currentColor 55%, transparent),
+    inset 0 -1px 0 color-mix(in oklab, currentColor 35%, transparent);
+}
+
+.item-tip-header::before,
+.item-tip-header::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border: 1px solid color-mix(in oklab, currentColor 70%, transparent);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.item-tip-header::before {
+  left: 10px;
+}
+
+.item-tip-header::after {
+  right: 10px;
+}
+
+.item-art-sheet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-art-sheet-frame {
+  position: relative;
+  height: 92%;
+  aspect-ratio: 1 / 2;
+  overflow: hidden;
+}
+
+.item-art-sheet-frame img {
+  position: absolute;
+  inset: 0 auto 0 0;
+  height: 100%;
+  width: calc(100% * var(--sheet-frames, 3));
+  max-width: none;
+  object-fit: cover;
+  object-position: left top;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

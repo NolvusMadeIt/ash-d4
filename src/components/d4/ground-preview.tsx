@@ -63,7 +63,6 @@ export function GroundPreview() {
                 style={{
                   left: `${item.x}%`,
                   top: `${item.y}%`,
-                  transform: `translate(-50%, -50%) rotate(${item.rot}deg)`,
                   color,
                   opacity: hiddenLabel ? 0.38 : 1,
                 }}
@@ -81,8 +80,8 @@ export function GroundPreview() {
                 <img
                   src={item.icon}
                   alt=""
-                  width={28}
-                  height={28}
+                  width={40}
+                  height={40}
                   onError={(e) => {
                     e.currentTarget.src = slotIcon(item.slot);
                   }}

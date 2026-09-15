@@ -138,22 +138,22 @@ const RARITY_BAG: Rarity[] = [
 function scatter(count: number, rand: () => number) {
   const clusters = 2 + Math.floor(rand() * 3);
   const centers = Array.from({ length: clusters }, () => ({
-    x: 8 + rand() * 82,
-    y: 18 + rand() * 58,
+    x: 10 + rand() * 52,
+    y: 14 + rand() * 58,
   }));
   const placed: { x: number; y: number; rot: number }[] = [];
   for (let i = 0; i < count; i++) {
     const c = centers[i % clusters]!;
-    let x = 50;
-    let y = 50;
-    for (let t = 0; t < 24; t++) {
-      x = c.x + (rand() - 0.5) * 42;
-      y = c.y + (rand() - 0.5) * 34;
-      x = Math.min(86, Math.max(5, x));
-      y = Math.min(82, Math.max(10, y));
-      if (!placed.some((p) => Math.abs(p.x - x) < 18 && Math.abs(p.y - y) < 9)) break;
+    let x = 12;
+    let y = 20;
+    for (let t = 0; t < 28; t++) {
+      x = c.x + (rand() - 0.5) * 36;
+      y = c.y + (rand() - 0.5) * 30;
+      x = Math.min(58, Math.max(3, x));
+      y = Math.min(78, Math.max(8, y));
+      if (!placed.some((p) => Math.abs(p.x - x) < 20 && Math.abs(p.y - y) < 11)) break;
     }
-    placed.push({ x, y, rot: (rand() - 0.5) * 3 });
+    placed.push({ x, y, rot: 0 });
   }
   return placed;
 }

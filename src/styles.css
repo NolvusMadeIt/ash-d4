@@ -257,16 +257,11 @@
 }
 
 .loot-drop img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
-  outline: 1px solid color-mix(in oklab, #fff 12%, transparent);
-  outline-offset: -1px;
-  box-shadow: 0 2px 8px #000;
-}
-
-.loot-drop:hover img {
-  outline-color: color-mix(in oklab, #fff 35%, transparent);
+  image-rendering: auto;
+  filter: drop-shadow(0 2px 6px #000);
 }
 
 .loot-drop-name {

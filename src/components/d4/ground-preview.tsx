@@ -4,17 +4,7 @@ import { generateGroundDrops, seedFromFilter } from "@/lib/d4/drops";
 import { matchItem } from "@/lib/d4/evaluate";
 import type { GroundDrop } from "@/lib/d4/types";
 import { useAsh } from "@/lib/store";
-import { cn } from "@/lib/utils";
 import { GaStar, ItemTooltip } from "@/components/d4/item-tooltip";
-
-const RARITY_CLASS: Record<string, string> = {
-  common: "text-rarity-common",
-  magic: "text-rarity-magic",
-  rare: "text-rarity-rare",
-  legendary: "text-rarity-legendary",
-  unique: "text-rarity-unique",
-  mythic: "text-rarity-mythic",
-};
 
 export function GroundPreview() {
   const filter = useAsh((s) => s.active());
@@ -59,10 +49,11 @@ export function GroundPreview() {
                 key={item.id}
                 type="button"
                 className="loot-drop"
+                data-rarity={item.rarity}
                 style={{
                   left: `${item.x}%`,
                   top: `${item.y}%`,
-                  color,
+                  ...(color ? { ["--loot-ink" as string]: color } : {}),
                   opacity: hiddenLabel ? 0.38 : 1,
                 }}
                 onPointerEnter={(e) => {
@@ -79,13 +70,13 @@ export function GroundPreview() {
                 <img
                   src={item.icon}
                   alt=""
-                  width={40}
-                  height={40}
+                  width={36}
+                  height={36}
                   onError={(e) => {
                     e.currentTarget.src = `/images/d4/slots/${item.slot}.png`;
                   }}
                 />
-                <span className={cn("loot-drop-name", color ? undefined : RARITY_CLASS[item.rarity])}>
+                <span className="loot-drop-name">
                   {hiddenLabel ? "· · ·" : item.name}
                   {!hiddenLabel && stars > 0
                     ? Array.from({ length: Math.min(stars, 4) }, (_, i) => (

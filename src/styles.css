@@ -235,40 +235,78 @@
 }
 
 .loot-drop {
+  --loot-ink: var(--color-rarity-common);
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.28rem;
   min-height: 44px;
-  max-width: 22rem;
+  max-width: 24rem;
   padding: 0;
   background: transparent;
   border: 0;
   text-align: left;
-  font-family: var(--font-loot);
-  font-weight: 600;
-  font-size: 0.95rem;
-  line-height: 1.15;
-  white-space: nowrap;
-  text-shadow:
-    0 1px 2px #000,
-    0 0 10px #000,
-    0 0 18px #000;
+}
+
+.loot-drop[data-rarity="magic"] {
+  --loot-ink: var(--color-rarity-magic);
+}
+.loot-drop[data-rarity="rare"] {
+  --loot-ink: var(--color-rarity-rare);
+}
+.loot-drop[data-rarity="legendary"] {
+  --loot-ink: var(--color-rarity-legendary);
+}
+.loot-drop[data-rarity="unique"] {
+  --loot-ink: var(--color-rarity-unique);
+}
+.loot-drop[data-rarity="mythic"] {
+  --loot-ink: var(--color-rarity-mythic);
 }
 
 .loot-drop img {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
   image-rendering: auto;
-  filter: drop-shadow(0 2px 6px #000);
+  filter: drop-shadow(0 2px 6px color-mix(in oklab, #000 80%, transparent));
 }
 
 .loot-drop-name {
   display: inline-flex;
   align-items: center;
   gap: 0.22rem;
+  max-width: 20rem;
+  padding: 0.2rem 0.62rem 0.18rem;
+  overflow: hidden;
+  color: var(--loot-ink);
+  background: rgb(6 5 4 / 0.92);
+  border: 1px solid var(--loot-ink);
+  box-shadow:
+    0 0 0 1px #000,
+    0 4px 12px rgb(0 0 0 / 0.7);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+  text-transform: uppercase;
   white-space: nowrap;
+  text-shadow: none;
+}
+
+.loot-drop[data-rarity="unique"] .loot-drop-name,
+.loot-drop[data-rarity="mythic"] .loot-drop-name {
+  box-shadow:
+    0 0 0 1px #050403,
+    0 0 10px color-mix(in oklab, var(--loot-ink) 42%, transparent),
+    0 3px 10px color-mix(in oklab, #000 72%, transparent),
+    inset 0 0 10px color-mix(in oklab, #000 35%, transparent);
+}
+
+.loot-drop:hover .loot-drop-name,
+.loot-drop:focus-visible .loot-drop-name {
+  background: rgb(10 8 6 / 0.96);
 }
 
 .loot-ga {
